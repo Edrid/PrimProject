@@ -1,0 +1,47 @@
+class TaskController{
+	public void process(Image img, int filterID){
+		//Capire quale filtro si vuole applicare
+		Filter myFilter; //DEVE ESSERE UN PUNTATORE (IN C++)
+		myFilter = getTypeOfFilter(filterID);
+		FilterApplyer myFA = new FilterApplyer();
+		myFA.applyFilter(myFilter, img);
+	}
+	
+	private Filter getTypeOfFilter(int filterID){
+		Filter mioFiltro;
+	
+		.
+		.
+		.
+		
+		switch ..
+			mioFiltro = new GaussianBlur();
+			
+		end
+		
+		return mioFiltro;
+		
+	}
+}
+
+...
+
+class FilterApplyer{
+	public Image applyFilter(Filter filtroDaUsare, Image img){ //deve essere un puntatore (FILTER)
+		Image processedImage = filtroDaUsare.elaborate(img);
+		
+		return processedImage;
+	}		
+}
+	
+//Astratta
+class Filter{
+public:
+	virtual Image elaborate(Image immagine) = 0; //Poi eventualmente dimensione della matrice etc.	
+	
+}
+
+class GaussianBlur : public Filter{
+public:
+	Image elaborate(Image immagine){}
+}
