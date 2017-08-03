@@ -1,4 +1,4 @@
-# Install script for directory: /home/edoardo/CLionProjects/convolutionFunction
+# Install script for directory: /home/edoardo/Documents/Prim_project/Modules+prototypes/convolutionFunction
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/edoardo/CLionProjects/convolutionFunction/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/edoardo/Documents/Prim_project/Modules+prototypes/convolutionFunction/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

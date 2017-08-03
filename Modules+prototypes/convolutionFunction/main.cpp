@@ -7,24 +7,26 @@ void myFunction(std::vector<std::vector<int>> &myVec){
     std::cout << std::endl;
     std::cout << std::endl;
 
-    for(int i = 0; i < myVec.size(); i++){
-        for(int j = 0; j < myVec.at(i).size(); j++){
+    for(int i = 0; i < (int)myVec.size(); i++){
+        for(int j = 0; j < (int)myVec.at(i).size(); j++){
             std::cout << myVec.at(i).at(j);
         }
         std::cout << std::endl;
     }
 }
 
-std::vector<std::vector<int>> convolute(std::vector<std::vector<int>> original, std::vector<std::vector<int>> convMat){
+std::vector<std::vector<int>> convolute(std::vector<std::vector<int>> &original, std::vector<std::vector<int>> &convMat){
 
     std::cout << "Called convolution function" << std::endl;
 
     //TODO controllare di, eventualmente, non aver invertito length e height
-    int length = original.at(0).size();
-    int height = original.size();
+    unsigned long  length = original.at(0).size();
+    unsigned long height = original.size();
 
-    int convMatLength = convMat.at(0).size();
-    int convMatHeight = convMat.size();
+    int convMatLength = (int)convMat.at(0).size();
+    int convMatHeight= (int)convMat.size();
+    //std::vector<std::vector<int>> mat(rows, std::vector<int>(cols,0));
+    std::vector<std::vector<int>> convoluted(original.size(), std::vector<int>(original.at(0).size()));
 
 
     std::vector<std::vector<int>> convolutedMat(height, std::vector<int>(5));
@@ -39,9 +41,9 @@ std::vector<std::vector<int>> convolute(std::vector<std::vector<int>> original, 
 
     //LA LOGICA È DA QUI IN POI
     int sum = 0;
-    int it1 = -1, it2 = -1;
-    for(int k = 1; k < height-1; k++){ //6-1
-        for(int s = 1; s < length-1; s++){ //5-1
+    int it1 = -1, it2 = -1; //TODO fix it1 and it2: they work only if the convolution matrix is 3x3
+    for(unsigned long k = 1; k < height-1; k++){ //6-1
+        for(unsigned long s = 1; s < length-1; s++){ //5-1
             sum = 0;
             it1 = -1;
             for(int i = 0; i < convMatHeight; i++){ //3 perchè ho scelto, in questo esempio, una matrice di convoluzione 3x3
@@ -54,11 +56,11 @@ std::vector<std::vector<int>> convolute(std::vector<std::vector<int>> original, 
                 }
                 it1++;
             }
-            convMat[k][s] = sum; //TODO ERRORE QUA, SI FERMA QUI COL DEBUG
+            convoluted[k][s] = sum; //TODO ERRORE QUA, SI FERMA QUI COL DEBUG
         }
     }
 
-    return convMat;
+    return convoluted;
 
 }
 
@@ -116,12 +118,19 @@ int main() {
     std::vector<std::vector<int>> image = {{8,1,3,2,2},{1,2,1,0,3},{2,0,1,0,2},{3,1,2,0,1},{2,1,3,2,1},{2,0,1,0,0}};
     std::vector<std::vector<int>> convMatrix = {{-1,-1,-1},{-1,8,-1},{-1,-1,-1}};
 
+    for(int i = 0; i < image.size(); i++){
+        for(int j = 0; j < image.at(0).size(); j++){
+            std::cout << "\t" << image.at(i).at(j);
+        }
+        std::cout << "\n";
+    }
+
 
     std::vector<std::vector<int>> convImage = convolute(image, convMatrix);
 
     for(int i = 0; i < 6; i++){
         for(int j = 0; j < 5; j++){
-            std::cout << " " << convImage[i][j];
+            std::cout << "\t" << convImage[i][j];
         }
         std::cout << std::endl;
     }

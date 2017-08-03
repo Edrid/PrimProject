@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/edoardo/CLionProjects/convolutionFunction/main.cpp" "/home/edoardo/CLionProjects/convolutionFunction/cmake-build-debug/CMakeFiles/convolutionFunction.dir/main.cpp.o"
+  "/home/edoardo/Documents/Prim_project/Modules+prototypes/convolutionFunction/main.cpp" "/home/edoardo/Documents/Prim_project/Modules+prototypes/convolutionFunction/cmake-build-debug/CMakeFiles/convolutionFunction.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
