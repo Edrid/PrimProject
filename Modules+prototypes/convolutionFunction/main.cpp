@@ -51,12 +51,12 @@ std::vector<std::vector<int>> convolute(std::vector<std::vector<int>> &original,
                 for(int j = 0; j < convMatLength; j++){
                     //TODO fare tutta la logica i.e. somma dei valori e divisione per totale della matrice di convoluzione, aggiungere matrice di convoluzione
                     //std::cout << "Image pixel at k+it1,s+it2 is: " << image[k+it1][s+it2] << std::endl << "convMat value is: \t\t" << convMat[i][j] << std::endl;
-                    sum = sum + original[k+it1][s+it2]*convMat[i][j];
+                    sum = sum + original.at(k+it1).at(s+it2)*convMat.at(i).at(j);
                     it2++;
                 }
                 it1++;
             }
-            convoluted[k][s] = sum; //TODO ERRORE QUA, SI FERMA QUI COL DEBUG
+            convoluted.at(k).at(s) = sum;
         }
     }
 
