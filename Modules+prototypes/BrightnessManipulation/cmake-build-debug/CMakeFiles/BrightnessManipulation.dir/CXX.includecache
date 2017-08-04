@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/edoardo/Documents/Prim_project/Modules+prototypes/ImMagPlayground/main.cpp
+/home/edoardo/Documents/Prim_project/Modules+prototypes/BrightnessManipulation/main.cpp
 iostream
 -
 Magick++.h

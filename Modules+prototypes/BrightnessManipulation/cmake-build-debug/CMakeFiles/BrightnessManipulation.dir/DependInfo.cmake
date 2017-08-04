@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/edoardo/Documents/Prim_project/Modules+prototypes/ImMagPlayground/main.cpp" "/home/edoardo/Documents/Prim_project/Modules+prototypes/ImMagPlayground/cmake-build-debug/CMakeFiles/ImMagPlayground.dir/main.cpp.o"
+  "/home/edoardo/Documents/Prim_project/Modules+prototypes/BrightnessManipulation/main.cpp" "/home/edoardo/Documents/Prim_project/Modules+prototypes/BrightnessManipulation/cmake-build-debug/CMakeFiles/BrightnessManipulation.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

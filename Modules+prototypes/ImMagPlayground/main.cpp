@@ -46,7 +46,8 @@ std::vector<std::vector<int>> convolute(std::vector<std::vector<int>> &original,
             }
             //std::cout << "Sum = " << sum << std::endl;
             //QUICKFIX for the case of pixels <256 or pixels < 0
-            sum = sum/convSum;
+            //sum = sum/convSum; //divide only if the sum has to be normalised e.g. gaussian
+
             if(sum < 0)
                 sum = -sum;
             //std::cout << "Sum = " << sum%256 << std::endl;
@@ -93,7 +94,7 @@ int main(int argc,char **argv) {
     Color pixColor;
     for(unsigned int i = 0; i < img.rows(); i++){
         for(unsigned int j = 0; j < img.columns(); j++){
-            pixColor = img.pixelColor(i,j);
+            pixColor = img.pixelColor(j,i);
             alphas.at(i).at(j) = pixColor.quantumAlpha();
             reds.at(i).at(j) = (int)pixColor.quantumRed();
             greens.at(i).at(j) = (int)pixColor.quantumGreen();
@@ -103,7 +104,9 @@ int main(int argc,char **argv) {
 
     Image elaboratedImage(Geometry(img.size().width(),img.size().height()), Color(QuantumRange, QuantumRange, QuantumRange, 200));
     //elaboratedImage.display();
-    std::vector<std::vector<int>> convMatrix = {{1,2,1},{2,4,2},{1,2,1}}; //This is the gaussian blur kernel
+    //std::vector<std::vector<int>> convMatrix = {{1,2,1},{2,4,2},{1,2,1}}; //This is the gaussian blur kernel
+    std::vector<std::vector<int>> convMatrix = {{-1,-1,-1},{-1,8,-1},{-1,-1,-1}}; //This is the gaussian blur kernel
+
     //Apply the convolution
     reds = convolute(reds, convMatrix);
     greens = convolute(greens, convMatrix);
@@ -132,8 +135,8 @@ int main(int argc,char **argv) {
 
 
     for(unsigned int i = 0; i < elaboratedImage.size().height(); i++){
-        for(unsigned int j = 0; j < elaboratedImage.size().height(); j++){
-            elaboratedImage.pixelColor(i,j, Color(reds.at(i).at(j), greens.at(i).at(j), blues.at(i).at(j), 255));
+        for(unsigned int j = 0; j < elaboratedImage.size().width(); j++){
+            elaboratedImage.pixelColor(j,i, Color(reds.at(i).at(j), greens.at(i).at(j), blues.at(i).at(j), 255));
             //std::cout << "i = " << i << "\tj = " << j << std::endl;
         }
     }

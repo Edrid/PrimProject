@@ -54,45 +54,45 @@ RM = /opt/clion/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edoardo/Documents/Prim_project/Modules+prototypes/ImMagPlayground
+CMAKE_SOURCE_DIR = /home/edoardo/Documents/Prim_project/Modules+prototypes/BrightnessManipulation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edoardo/Documents/Prim_project/Modules+prototypes/ImMagPlayground/cmake-build-debug
+CMAKE_BINARY_DIR = /home/edoardo/Documents/Prim_project/Modules+prototypes/BrightnessManipulation/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/ImMagPlayground.dir
+# Target rules for target CMakeFiles/BrightnessManipulation.dir
 
 # All Build rule for target.
-CMakeFiles/ImMagPlayground.dir/all:
-	$(MAKE) -f CMakeFiles/ImMagPlayground.dir/build.make CMakeFiles/ImMagPlayground.dir/depend
-	$(MAKE) -f CMakeFiles/ImMagPlayground.dir/build.make CMakeFiles/ImMagPlayground.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/edoardo/Documents/Prim_project/Modules+prototypes/ImMagPlayground/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target ImMagPlayground"
-.PHONY : CMakeFiles/ImMagPlayground.dir/all
+CMakeFiles/BrightnessManipulation.dir/all:
+	$(MAKE) -f CMakeFiles/BrightnessManipulation.dir/build.make CMakeFiles/BrightnessManipulation.dir/depend
+	$(MAKE) -f CMakeFiles/BrightnessManipulation.dir/build.make CMakeFiles/BrightnessManipulation.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/edoardo/Documents/Prim_project/Modules+prototypes/BrightnessManipulation/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target BrightnessManipulation"
+.PHONY : CMakeFiles/BrightnessManipulation.dir/all
 
 # Include target in all.
-all: CMakeFiles/ImMagPlayground.dir/all
+all: CMakeFiles/BrightnessManipulation.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ImMagPlayground.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edoardo/Documents/Prim_project/Modules+prototypes/ImMagPlayground/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ImMagPlayground.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edoardo/Documents/Prim_project/Modules+prototypes/ImMagPlayground/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ImMagPlayground.dir/rule
+CMakeFiles/BrightnessManipulation.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edoardo/Documents/Prim_project/Modules+prototypes/BrightnessManipulation/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/BrightnessManipulation.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edoardo/Documents/Prim_project/Modules+prototypes/BrightnessManipulation/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/BrightnessManipulation.dir/rule
 
 # Convenience name for target.
-ImMagPlayground: CMakeFiles/ImMagPlayground.dir/rule
+BrightnessManipulation: CMakeFiles/BrightnessManipulation.dir/rule
 
-.PHONY : ImMagPlayground
-
-# clean rule for target.
-CMakeFiles/ImMagPlayground.dir/clean:
-	$(MAKE) -f CMakeFiles/ImMagPlayground.dir/build.make CMakeFiles/ImMagPlayground.dir/clean
-.PHONY : CMakeFiles/ImMagPlayground.dir/clean
+.PHONY : BrightnessManipulation
 
 # clean rule for target.
-clean: CMakeFiles/ImMagPlayground.dir/clean
+CMakeFiles/BrightnessManipulation.dir/clean:
+	$(MAKE) -f CMakeFiles/BrightnessManipulation.dir/build.make CMakeFiles/BrightnessManipulation.dir/clean
+.PHONY : CMakeFiles/BrightnessManipulation.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/BrightnessManipulation.dir/clean
 
 .PHONY : clean
 
