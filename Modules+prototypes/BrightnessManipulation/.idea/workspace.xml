@@ -12,13 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8298921-3ca5-4f75-98a6-b212c0293bd5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ImMagPlayground/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/BrightnessManipulation" afterPath="$PROJECT_DIR$/cmake-build-debug/BrightnessManipulation" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BrightnessManipulation.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BrightnessManipulation.dir/main.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ImMagPlayground/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ImMagPlayground/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../PrimUML.mdj" afterPath="$PROJECT_DIR$/../../PrimUML.mdj" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -325,12 +322,20 @@
       <updated>1501836257809</updated>
       <workItem from="1501836262898" duration="4598000" />
       <workItem from="1501943234586" duration="857000" />
-      <workItem from="1502009536405" duration="6757000" />
+      <workItem from="1502009536405" duration="6901000" />
     </task>
+    <task id="LOCAL-00001" summary="Played around with color changes. Added permutations of RGB values. &#10;&quot;Discovered&quot; decolorization except for red (cool). TODO: figure out what&#10;I've unpurposely done.">
+      <created>1502030504063</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1502030504063</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12212000" />
+    <option name="totallyTimeSpent" value="12356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1366" height="742" extended-state="6" />
@@ -361,6 +366,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Played around with color changes. Added permutations of RGB values. &#10;&quot;Discovered&quot; decolorization except for red (cool). TODO: figure out what&#10;I've unpurposely done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Played around with color changes. Added permutations of RGB values. &#10;&quot;Discovered&quot; decolorization except for red (cool). TODO: figure out what&#10;I've unpurposely done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
