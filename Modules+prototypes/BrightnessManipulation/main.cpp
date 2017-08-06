@@ -2,8 +2,11 @@
 #include <Magick++.h>
 
 using namespace Magick;
-
-std::vector<std::vector<int>> changeRed(std::vector<std::vector<int>> &originalReds, int changeValue);
+std::vector<std::vector<int>> changeRed(Image& img, int changeValue);
+std::vector<std::vector<int>> changeGreen(Image& img, int changeValue);
+std::vector<std::vector<int>> changeBlue(Image& img, int changeValue);
+std::vector<std::vector<int>> changeAlpha(Image& img, int changeValue);
+std::vector<std::vector<int>> changeValue(std::vector<std::vector<int>> &originalVal, int changeValue);
 
 
 int main(int argc,char **argv) {
@@ -20,7 +23,7 @@ int main(int argc,char **argv) {
         }
     }
 
-    reds = changeRed(reds, 255);
+    reds = changeValue(myImg, 255);
 
     Image newImage("640x480", "white");
 
@@ -35,23 +38,33 @@ int main(int argc,char **argv) {
     return 0;
 }
 
-std::vector<std::vector<int>> changeRed(std::vector<std::vector<int>> &originalReds, int changeValue){
-    std::vector<std::vector<int>> newReds(originalReds.size(), std::vector<int>(originalReds.at(0).size()));
-    int redValue = 0;
-    for(int i = 0; i < originalReds.size(); i++){
-        for(int j = 0; j < originalReds.at(0).size(); j++){
-            redValue = originalReds.at(i).at(j);
+std::vector<std::vector<int>> changeValue(std::vector<std::vector<int>> &originalVal, int changeValue){
+    std::vector<std::vector<int>> newVal(originalVal.size(), std::vector<int>(originalVal.at(0).size()));
+    int value = 0;
+    for(int i = 0; i < originalVal.size(); i++){
+        for(int j = 0; j < originalVal.at(0).size(); j++){
+            value = originalVal.at(i).at(j);
             //TODO generalize this whole thing for the QuantumBlue and QuantumGreen
-            redValue = redValue + changeValue;
-            if(redValue > 255){
-                redValue = 255;
-            } else if(redValue < 0){
-                redValue = 0;
+            value = value + changeValue;
+            if(value > 255){
+                value = 255;
+            } else if(value < 0){
+                value = 0;
             }
-            newReds.at(i).at(j) = redValue;
+            newVal.at(i).at(j) = value;
         }
     }
 
-    return newReds;
+    return newVal;
+}
+//TODO implement color changes modularities
+Image changeRed(Image& img, int changeValue){
+    std::vector<std::vector<int>> reds(img.rows(), std::vector<int>(img.columns()));
+    reds = changeValue(&reds, changeValue);
 
 }
+Image changeGreen(Image& img, int changeValue){}
+Image changeBlue(Image& img, int changeValue){}
+Image changeAlpha(Image& img, int changeValue){}
+
+
