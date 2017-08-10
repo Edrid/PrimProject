@@ -95,7 +95,7 @@ int main(int argc,char **argv) {
     for(unsigned int i = 0; i < img.rows(); i++){
         for(unsigned int j = 0; j < img.columns(); j++){
             pixColor = img.pixelColor(j,i);
-            alphas.at(i).at(j) = pixColor.quantumAlpha();
+            alphas.at(i).at(j) = (int)pixColor.quantumAlpha();
             reds.at(i).at(j) = (int)pixColor.quantumRed();
             greens.at(i).at(j) = (int)pixColor.quantumGreen();
             blues.at(i).at(j) = (int)pixColor.quantumBlue();
@@ -120,8 +120,7 @@ int main(int argc,char **argv) {
     std::cout << "Greens at 250, 500 is " << greens.at(250).at(500) << std::endl;
     std::cout << "Blues at 250, 500 is " << blues.at(250).at(500) << std::endl;
 
-    int duecento = 200;
-    elaboratedImage.pixelColor(0,0,Color(duecento,duecento,duecento,duecento));
+
     //elaboratedImage.display();
 
     //TODO E' possibile che i pixel vadano out of range, tofix

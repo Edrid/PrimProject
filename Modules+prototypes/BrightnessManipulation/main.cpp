@@ -209,3 +209,5 @@ Image permuteBGR(Image img){
 
 /* -----------THOUGHT SPACE-------------- */
 
+/*  Figure out a way to avoid code repetition.. maybe preprocessing or generic programming?
+ * */
