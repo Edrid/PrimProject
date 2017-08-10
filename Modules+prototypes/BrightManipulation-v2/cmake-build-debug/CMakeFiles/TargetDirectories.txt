@@ -1,0 +1,3 @@
+/home/edoardo/Documents/Prim_project/Modules+prototypes/BrightManipulation-v2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/edoardo/Documents/Prim_project/Modules+prototypes/BrightManipulation-v2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/edoardo/Documents/Prim_project/Modules+prototypes/BrightManipulation-v2/cmake-build-debug/CMakeFiles/BrightManipulation_v2.dir

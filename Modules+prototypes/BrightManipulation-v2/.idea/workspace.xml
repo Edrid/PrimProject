@@ -12,20 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="323e4ebc-7e2b-481e-8be5-a3bda3b85f0c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/BrightManipulation-v2.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ImMagPlayground/cmake-build-debug/CMakeFiles/ImMagPlayground.dir/main.cpp.o" afterPath="$PROJECT_DIR$/../ImMagPlayground/cmake-build-debug/CMakeFiles/ImMagPlayground.dir/main.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ImMagPlayground/cmake-build-debug/ImMagPlayground" afterPath="$PROJECT_DIR$/../ImMagPlayground/cmake-build-debug/ImMagPlayground" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BrightnessManipulation/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../BrightnessManipulation/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BrightnessManipulation/main.cpp" afterPath="$PROJECT_DIR$/../BrightnessManipulation/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ImMagPlayground/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ImMagPlayground/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ImMagPlayground/main.cpp" afterPath="$PROJECT_DIR$/../ImMagPlayground/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../PrimUML.mdj" afterPath="$PROJECT_DIR$/../../PrimUML.mdj" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +38,7 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="348">
               <caret line="52" column="26" lean-forward="false" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -316,12 +303,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1502376352989</updated>
-      <workItem from="1502376354973" duration="1511000" />
+      <workItem from="1502376354973" duration="1585000" />
     </task>
+    <task id="LOCAL-00001" summary="Fatto changeValue, generico con vettore. &#10;&#10;L'implementazione del progetto è meglio sia fatta con i vettori e che &#10;in particolare nella classe ImageProcessor ci sia la conversione &#10;tra immagine e canali.">
+      <created>1502377936128</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1502377936128</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1511000" />
+    <option name="totallyTimeSpent" value="1585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1366" height="742" extended-state="6" />
@@ -332,7 +327,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -354,6 +349,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fatto changeValue, generico con vettore. &#10;&#10;L'implementazione del progetto è meglio sia fatta con i vettori e che &#10;in particolare nella classe ImageProcessor ci sia la conversione &#10;tra immagine e canali." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fatto changeValue, generico con vettore. &#10;&#10;L'implementazione del progetto è meglio sia fatta con i vettori e che &#10;in particolare nella classe ImageProcessor ci sia la conversione &#10;tra immagine e canali." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -369,7 +368,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="348">
           <caret line="52" column="26" lean-forward="false" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
