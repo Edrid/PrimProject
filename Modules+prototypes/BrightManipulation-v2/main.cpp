@@ -30,7 +30,7 @@ int main(int argc,char **argv) {
     Image elaboratedImage(Geometry(img.size().width(),img.size().height()), Color(QuantumRange, QuantumRange, QuantumRange, 200));
     elaboratedImage.display();
 
-    reds = changeValue(reds, -255);
+    reds = changeValue(reds, 255);
     greens = changeValue(greens, -255);
 
     for(unsigned int i = 0; i < elaboratedImage.size().height(); i++){
