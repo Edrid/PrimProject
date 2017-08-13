@@ -40,6 +40,6 @@ void ImageElaborator::imgToVectors() {
             blues.at(i).at(j) = (int)pixColor.quantumBlue();
             //cout << "  " << (int)pixColor.quantumGreen();
         }
-        cout << endl;
+        //cout << endl;
     }
 }
