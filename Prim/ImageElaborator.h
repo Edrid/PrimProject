@@ -6,6 +6,7 @@
 #define PRIM_IMAGEELABORATOR_H
 
 #include <Magick++.h>
+#include <vector>
 #include <memory>
 
 using namespace Magick;
@@ -19,14 +20,15 @@ public:
     ImageElaborator();
     void setImage(string path);
     void setImage(Image &img);
-
+    void imgToVectors(); //TODO move this into the private sector
 
 private:
-    vector<int> imgToVector(); //In this case the parameter list is empty because I already have access to the image, in fact it's inside of the class
+    //void imgToVectors(); //In this case the parameter list is empty because I already have access to the image, in fact it's inside of the class
     void renderImage(); //Both return value and parameter list are empty for the same reason as above
 
+    //The following are the quantum containers, a different implementation is certainly possible, though this one is more practical
     vector<vector<int>> reds;
-    vector<vector<int>> green;
+    vector<vector<int>> greens;
     vector<vector<int>> blues;
     vector<vector<int>> alphas;
 
