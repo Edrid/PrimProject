@@ -123,6 +123,33 @@ Prim/fast:
 	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/build
 .PHONY : Prim/fast
 
+FilterApplyer.o: FilterApplyer.cpp.o
+
+.PHONY : FilterApplyer.o
+
+# target to build an object file
+FilterApplyer.cpp.o:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/FilterApplyer.cpp.o
+.PHONY : FilterApplyer.cpp.o
+
+FilterApplyer.i: FilterApplyer.cpp.i
+
+.PHONY : FilterApplyer.i
+
+# target to preprocess a source file
+FilterApplyer.cpp.i:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/FilterApplyer.cpp.i
+.PHONY : FilterApplyer.cpp.i
+
+FilterApplyer.s: FilterApplyer.cpp.s
+
+.PHONY : FilterApplyer.s
+
+# target to generate assembly for a file
+FilterApplyer.cpp.s:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/FilterApplyer.cpp.s
+.PHONY : FilterApplyer.cpp.s
+
 ImageElaborator.o: ImageElaborator.cpp.o
 
 .PHONY : ImageElaborator.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Prim"
+	@echo "... FilterApplyer.o"
+	@echo "... FilterApplyer.i"
+	@echo "... FilterApplyer.s"
 	@echo "... ImageElaborator.o"
 	@echo "... ImageElaborator.i"
 	@echo "... ImageElaborator.s"

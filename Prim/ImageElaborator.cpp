@@ -5,18 +5,26 @@
 #include <iostream>
 #include "ImageElaborator.h"
 
+
+ImageElaborator::ImageElaborator(string path) {
+    setImage(path);
+    imgToVectors();
+} //Order: OK, compilier knows 'setImage()' exists
+ImageElaborator::ImageElaborator() {}
+
 void ImageElaborator::setImage(string path) {
     shared_ptr<Image> p(new Image(path)); //I need to use this temporary shared ptr, for some reason if i do img = new Image(path) it doesn't work. It doesn't work if I do Image i(path); img = &i; either
     img = p;
+    imgToVectors();
 }
 
-ImageElaborator::ImageElaborator() {}
+
 
 void ImageElaborator::imgToVectors() {
     reds.resize(img->rows());
 
 
-    cout << "The vector height is: " << reds.size() << "\tAnd width is: " << reds.at(0).size() << endl;
+    //cout << "The vector height is:    " << reds.size() << "\tAnd width is: " << reds.at(0).size() << endl;
     //same for greens, blues and alphas
     greens.resize(img->rows());
 
@@ -43,3 +51,6 @@ void ImageElaborator::imgToVectors() {
         //cout << endl;
     }
 }
+
+//TODO renderImage()
+void ImageElaborator::renderImage() {}
