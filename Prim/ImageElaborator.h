@@ -8,6 +8,7 @@
 #include <Magick++.h>
 #include <vector>
 #include <memory>
+#include "FilterApplyer.h"
 
 using namespace Magick;
 using namespace std;
@@ -32,7 +33,7 @@ private:
     vector<vector<int>> greens;
     vector<vector<int>> blues;
     vector<vector<int>> alphas;
-
+    //FilterApplyer filterApplyer(reds, greens, blues, alphas);
 };
 
 
