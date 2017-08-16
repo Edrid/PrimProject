@@ -13,6 +13,8 @@
 using namespace Magick;
 using namespace std;
 
+//typedef shared_ptr<vector<vector<int>>> QuantumPointer;
+
 //Remember, the ImageElaborator always has to have the quantum vectors updated with the current values.
 class ImageElaborator {
 public:
@@ -25,15 +27,14 @@ public:
     void display(){ img->display(); }
 
 private:
-    //void imgToVectors(); //In this case the parameter list is empty because I already have access to the image, in fact it's inside of the class
+    void imgToVectors(); //In this case the parameter list is empty because I already have access to the image, in fact it's inside of the class
     void renderImage(); //Both return value and parameter list are empty for the same reason as above
-    void imgToVectors();
     //The following are the quantum containers, a different implementation is certainly possible, though this one is more practical
     vector<vector<int>> reds;
     vector<vector<int>> greens;
     vector<vector<int>> blues;
     vector<vector<int>> alphas;
-    //FilterApplyer filterApplyer(reds, greens, blues, alphas);
+    shared_ptr<FilterApplyer> filterApplyer_;
 };
 
 

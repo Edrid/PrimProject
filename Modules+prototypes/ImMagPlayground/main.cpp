@@ -46,7 +46,7 @@ std::vector<std::vector<int>> convolute(std::vector<std::vector<int>> &original,
             }
             //std::cout << "Sum = " << sum << std::endl;
             //QUICKFIX for the case of pixels <256 or pixels < 0
-            //sum = sum/convSum; //divide only if the sum has to be normalised e.g. gaussian
+            sum = sum/convSum; //divide only if the sum has to be normalised e.g. gaussian
 
             if(sum < 0)
                 sum = -sum;
@@ -104,8 +104,8 @@ int main(int argc,char **argv) {
 
     Image elaboratedImage(Geometry(img.size().width(),img.size().height()), Color(QuantumRange, QuantumRange, QuantumRange, 200));
     //elaboratedImage.display();
-    //std::vector<std::vector<int>> convMatrix = {{1,2,1},{2,4,2},{1,2,1}}; //This is the gaussian blur kernel
-    std::vector<std::vector<int>> convMatrix = {{-1,-1,-1},{-1,8,-1},{-1,-1,-1}}; //This is the gaussian blur kernel
+    std::vector<std::vector<int>> convMatrix = {{1,2,1},{2,4,2},{1,2,1}}; //This is the gaussian blur kernel
+    //std::vector<std::vector<int>> convMatrix = {{-1,-1,-1},{-1,8,-1},{-1,-1,-1}}; //This is the gaussian blur kernel
 
     //Apply the convolution
     reds = convolute(reds, convMatrix);

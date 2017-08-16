@@ -12,8 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="323e4ebc-7e2b-481e-8be5-a3bda3b85f0c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/cmake-build-debug/Prim" afterPath="$PROJECT_DIR$/../../Prim/cmake-build-debug/Prim" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ImMagPlayground/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ImMagPlayground/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Prim/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/FilterApplyer.h" afterPath="$PROJECT_DIR$/../../Prim/FilterApplyer.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/ImageElaborator.cpp" afterPath="$PROJECT_DIR$/../../Prim/ImageElaborator.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/ImageElaborator.h" afterPath="$PROJECT_DIR$/../../Prim/ImageElaborator.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/main.cpp" afterPath="$PROJECT_DIR$/../../Prim/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +44,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+            <state relative-caret-position="544">
+              <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -92,7 +97,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BrightnessManipulation" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -314,6 +319,7 @@
       <updated>1502376352989</updated>
       <workItem from="1502376354973" duration="1585000" />
       <workItem from="1502526690599" duration="678000" />
+      <workItem from="1502884089113" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="Fatto changeValue, generico con vettore. &#10;&#10;L'implementazione del progetto è meglio sia fatta con i vettori e che &#10;in particolare nella classe ImageProcessor ci sia la conversione &#10;tra immagine e canali.">
       <created>1502377936128</created>
@@ -326,7 +332,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2263000" />
+    <option name="totallyTimeSpent" value="2284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="741" extended-state="0" />
@@ -371,6 +377,24 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
           <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding />
         </state>
@@ -396,8 +420,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="544">
+          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

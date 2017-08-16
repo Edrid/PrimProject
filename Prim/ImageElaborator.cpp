@@ -5,10 +5,12 @@
 #include <iostream>
 #include "ImageElaborator.h"
 
+//typedef shared_ptr<vector<vector<int>>> QuantumPointer;
 
 ImageElaborator::ImageElaborator(string path) {
     setImage(path);
     imgToVectors();
+    filterApplyer_ = make_shared<FilterApplyer>(&reds, &greens, &blues, &alphas);
 } //Order: OK, compilier knows 'setImage()' exists
 ImageElaborator::ImageElaborator() {}
 
@@ -18,12 +20,8 @@ void ImageElaborator::setImage(string path) {
     imgToVectors();
 }
 
-
-
 void ImageElaborator::imgToVectors() {
     reds.resize(img->rows());
-
-
     //cout << "The vector height is:    " << reds.size() << "\tAnd width is: " << reds.at(0).size() << endl;
     //same for greens, blues and alphas
     greens.resize(img->rows());

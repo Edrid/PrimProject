@@ -9,5 +9,4 @@ int main(int argc,char **argv) {
     //elaborator.setImage("/home/edoardo/Documents/Prim_project/image1.jpg");
     //elaborator.imgToVectors();
     elaborator.display();
-
 }
