@@ -177,6 +177,33 @@ ImageElaborator.cpp.s:
 	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/ImageElaborator.cpp.s
 .PHONY : ImageElaborator.cpp.s
 
+KernelFilter.o: KernelFilter.cpp.o
+
+.PHONY : KernelFilter.o
+
+# target to build an object file
+KernelFilter.cpp.o:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/KernelFilter.cpp.o
+.PHONY : KernelFilter.cpp.o
+
+KernelFilter.i: KernelFilter.cpp.i
+
+.PHONY : KernelFilter.i
+
+# target to preprocess a source file
+KernelFilter.cpp.i:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/KernelFilter.cpp.i
+.PHONY : KernelFilter.cpp.i
+
+KernelFilter.s: KernelFilter.cpp.s
+
+.PHONY : KernelFilter.s
+
+# target to generate assembly for a file
+KernelFilter.cpp.s:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/KernelFilter.cpp.s
+.PHONY : KernelFilter.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -219,6 +246,9 @@ help:
 	@echo "... ImageElaborator.o"
 	@echo "... ImageElaborator.i"
 	@echo "... ImageElaborator.s"
+	@echo "... KernelFilter.o"
+	@echo "... KernelFilter.i"
+	@echo "... KernelFilter.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

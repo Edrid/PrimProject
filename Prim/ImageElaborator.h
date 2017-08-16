@@ -18,7 +18,6 @@ using namespace std;
 //Remember, the ImageElaborator always has to have the quantum vectors updated with the current values.
 class ImageElaborator {
 public:
-    shared_ptr<Image> img;
     ImageElaborator(string path);
     ImageElaborator(Image &img); //TODO in this constructor, also fill vectors
     ImageElaborator();
@@ -27,6 +26,7 @@ public:
     void display(){ img->display(); }
 
 private:
+    shared_ptr<Image> img;
     void imgToVectors(); //In this case the parameter list is empty because I already have access to the image, in fact it's inside of the class
     void renderImage(); //Both return value and parameter list are empty for the same reason as above
     //The following are the quantum containers, a different implementation is certainly possible, though this one is more practical

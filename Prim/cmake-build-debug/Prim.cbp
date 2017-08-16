@@ -94,6 +94,12 @@
 		<Unit filename="/home/edoardo/Documents/Prim_project/Prim/ImageElaborator.h">
 			<Option target="Prim"/>
 		</Unit>
+		<Unit filename="/home/edoardo/Documents/Prim_project/Prim/KernelFilter.cpp">
+			<Option target="Prim"/>
+		</Unit>
+		<Unit filename="/home/edoardo/Documents/Prim_project/Prim/KernelFilter.h">
+			<Option target="Prim"/>
+		</Unit>
 		<Unit filename="/home/edoardo/Documents/Prim_project/Prim/main.cpp">
 			<Option target="Prim"/>
 		</Unit>
