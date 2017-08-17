@@ -5,7 +5,7 @@
 #ifndef PRIM_FILTERAPPLYER_H
 #define PRIM_FILTERAPPLYER_H
 
-#include <iostream>
+#include <Magick++.h>
 #include <vector>
 #include <memory>
 #include "KernelFilter.h"

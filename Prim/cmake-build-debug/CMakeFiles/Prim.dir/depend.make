@@ -3,12 +3,18 @@
 
 CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../FilterApplyer.cpp
 CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../FilterApplyer.h
+CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../KernelFilter.h
 
 CMakeFiles/Prim.dir/ImageElaborator.cpp.o: ../FilterApplyer.h
 CMakeFiles/Prim.dir/ImageElaborator.cpp.o: ../ImageElaborator.cpp
 CMakeFiles/Prim.dir/ImageElaborator.cpp.o: ../ImageElaborator.h
+CMakeFiles/Prim.dir/ImageElaborator.cpp.o: ../KernelFilter.h
+
+CMakeFiles/Prim.dir/KernelFilter.cpp.o: ../KernelFilter.cpp
+CMakeFiles/Prim.dir/KernelFilter.cpp.o: ../KernelFilter.h
 
 CMakeFiles/Prim.dir/main.cpp.o: ../FilterApplyer.h
 CMakeFiles/Prim.dir/main.cpp.o: ../ImageElaborator.h
+CMakeFiles/Prim.dir/main.cpp.o: ../KernelFilter.h
 CMakeFiles/Prim.dir/main.cpp.o: ../main.cpp
 

@@ -4,18 +4,23 @@
 
 #include "FilterApplyer.h"
 
+#include <Magick++.h>
+#include <vector>
+#include <memory>
+
 void FilterApplyer::setKernelStrategy(FilterType filterID) {
     delete strategy_;
     if(filterID == FilterType::GaussianBlur){
-        strategy_ = new GaussianBlur();
+        //strategy_ = new GaussianBlur();
     }
 
     switch(filterID){
         case FilterType::GaussianBlur:
-            strategy_ = new GaussianBlur(); //TODO to be implemented
+            //strategy_ = new GaussianBlur(); //TODO to be implemented
             break;
         case FilterType::EdgeDetection:
-            strategy_ = new EdgeDetection(); //TODO to be implemented
+            //strategy_ = new EdgeDetection(); //TODO to be implemented
+            break;
         }
 
     //TODO so on and so forth for all the filters available

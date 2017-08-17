@@ -8,7 +8,7 @@
 #include <Magick++.h>
 #include <iostream>
 
-using namespace Magick;
+//using namespace Magick;
 using namespace std;
 
 typedef vector<vector<int>>* QuantumPointer;
@@ -17,10 +17,11 @@ typedef vector<vector<int>>* QuantumPointer;
 class KernelFilter {
 public:
     KernelFilter(); //Contructor TODO
-    Image applyFilter(QuantumPointer reds_, QuantumPointer greens, QuantumPointer blues, QuantumPointer alphas) = 0;
+    virtual void applyFilter(QuantumPointer reds_, QuantumPointer greens_, QuantumPointer blues_, QuantumPointer alphas_) = 0;
 
 private:
     vector<vector<int>> convMatrix;
+    vector<vector<int>> convolute(vector<vector<int>> originalVals);
 
 };
 
