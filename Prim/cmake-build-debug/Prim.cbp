@@ -88,6 +88,12 @@
 		<Unit filename="/home/edoardo/Documents/Prim_project/Prim/FilterApplyer.h">
 			<Option target="Prim"/>
 		</Unit>
+		<Unit filename="/home/edoardo/Documents/Prim_project/Prim/GaussianBlur.cpp">
+			<Option target="Prim"/>
+		</Unit>
+		<Unit filename="/home/edoardo/Documents/Prim_project/Prim/GaussianBlur.h">
+			<Option target="Prim"/>
+		</Unit>
 		<Unit filename="/home/edoardo/Documents/Prim_project/Prim/ImageElaborator.cpp">
 			<Option target="Prim"/>
 		</Unit>

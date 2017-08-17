@@ -150,6 +150,33 @@ FilterApplyer.cpp.s:
 	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/FilterApplyer.cpp.s
 .PHONY : FilterApplyer.cpp.s
 
+GaussianBlur.o: GaussianBlur.cpp.o
+
+.PHONY : GaussianBlur.o
+
+# target to build an object file
+GaussianBlur.cpp.o:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/GaussianBlur.cpp.o
+.PHONY : GaussianBlur.cpp.o
+
+GaussianBlur.i: GaussianBlur.cpp.i
+
+.PHONY : GaussianBlur.i
+
+# target to preprocess a source file
+GaussianBlur.cpp.i:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/GaussianBlur.cpp.i
+.PHONY : GaussianBlur.cpp.i
+
+GaussianBlur.s: GaussianBlur.cpp.s
+
+.PHONY : GaussianBlur.s
+
+# target to generate assembly for a file
+GaussianBlur.cpp.s:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/GaussianBlur.cpp.s
+.PHONY : GaussianBlur.cpp.s
+
 ImageElaborator.o: ImageElaborator.cpp.o
 
 .PHONY : ImageElaborator.o
@@ -243,6 +270,9 @@ help:
 	@echo "... FilterApplyer.o"
 	@echo "... FilterApplyer.i"
 	@echo "... FilterApplyer.s"
+	@echo "... GaussianBlur.o"
+	@echo "... GaussianBlur.i"
+	@echo "... GaussianBlur.s"
 	@echo "... ImageElaborator.o"
 	@echo "... ImageElaborator.i"
 	@echo "... ImageElaborator.s"

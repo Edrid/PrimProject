@@ -5,7 +5,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMA
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp ImageElaborator.cpp ImageElaborator.h FilterApplyer.cpp FilterApplyer.h KernelFilter.cpp KernelFilter.h)
+set(SOURCE_FILES main.cpp ImageElaborator.cpp ImageElaborator.h FilterApplyer.cpp FilterApplyer.h KernelFilter.cpp KernelFilter.h GaussianBlur.cpp GaussianBlur.h)
 add_executable(Prim ${SOURCE_FILES})
 
 target_link_libraries (Prim -lMagick++-7.Q8 -lMagickWand-7.Q8 -lMagickCore-7.Q8)

@@ -16,12 +16,16 @@ typedef vector<vector<int>>* QuantumPointer;
 //THIS IS AN ABSTRACT CLASS, THE CONVOLUTION METHOD WILL BE IMPLEMENTED.
 class KernelFilter {
 public:
-    KernelFilter(); //Contructor TODO
-    virtual void applyFilter(QuantumPointer reds_, QuantumPointer greens_, QuantumPointer blues_, QuantumPointer alphas_) = 0;
+    KernelFilter(QuantumPointer redsp, QuantumPointer greensp, QuantumPointer bluesp, QuantumPointer alphasp) : reds_(redsp), greens_(greensp), blues_(bluesp), alphas_(alphasp){} //Contructor TODO
+    virtual void applyFilter() = 0;
 
 private:
     vector<vector<int>> convMatrix;
-    vector<vector<int>> convolute(vector<vector<int>> originalVals);
+    vector<vector<int>> convolute(vector<vector<int>> originalVals); //it modifies the variables right below
+    QuantumPointer reds_;
+    QuantumPointer greens_;
+    QuantumPointer blues_;
+    QuantumPointer alphas_;
 
 };
 
