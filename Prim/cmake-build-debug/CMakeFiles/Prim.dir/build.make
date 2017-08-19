@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/barti/clion-2017.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion/bin/cmake/bin/cmake -E remove -f
+RM = /home/barti/clion-2017.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edoardo/Documents/Prim_project/Prim
+CMAKE_SOURCE_DIR = /home/barti/CLionProjects/PrimProject/Prim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edoardo/Documents/Prim_project/Prim/cmake-build-debug
+CMAKE_BINARY_DIR = /home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Prim.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Prim.dir/flags.make
 
 CMakeFiles/Prim.dir/main.cpp.o: CMakeFiles/Prim.dir/flags.make
 CMakeFiles/Prim.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Prim.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Prim.dir/main.cpp.o -c /home/edoardo/Documents/Prim_project/Prim/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Prim.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Prim.dir/main.cpp.o -c /home/barti/CLionProjects/PrimProject/Prim/main.cpp
 
 CMakeFiles/Prim.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Prim.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edoardo/Documents/Prim_project/Prim/main.cpp > CMakeFiles/Prim.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/barti/CLionProjects/PrimProject/Prim/main.cpp > CMakeFiles/Prim.dir/main.cpp.i
 
 CMakeFiles/Prim.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Prim.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edoardo/Documents/Prim_project/Prim/main.cpp -o CMakeFiles/Prim.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/barti/CLionProjects/PrimProject/Prim/main.cpp -o CMakeFiles/Prim.dir/main.cpp.s
 
 CMakeFiles/Prim.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Prim.dir/main.cpp.o.provides.build: CMakeFiles/Prim.dir/main.cpp.o
 
 CMakeFiles/Prim.dir/ImageElaborator.cpp.o: CMakeFiles/Prim.dir/flags.make
 CMakeFiles/Prim.dir/ImageElaborator.cpp.o: ../ImageElaborator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Prim.dir/ImageElaborator.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Prim.dir/ImageElaborator.cpp.o -c /home/edoardo/Documents/Prim_project/Prim/ImageElaborator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Prim.dir/ImageElaborator.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Prim.dir/ImageElaborator.cpp.o -c /home/barti/CLionProjects/PrimProject/Prim/ImageElaborator.cpp
 
 CMakeFiles/Prim.dir/ImageElaborator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Prim.dir/ImageElaborator.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edoardo/Documents/Prim_project/Prim/ImageElaborator.cpp > CMakeFiles/Prim.dir/ImageElaborator.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/barti/CLionProjects/PrimProject/Prim/ImageElaborator.cpp > CMakeFiles/Prim.dir/ImageElaborator.cpp.i
 
 CMakeFiles/Prim.dir/ImageElaborator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Prim.dir/ImageElaborator.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edoardo/Documents/Prim_project/Prim/ImageElaborator.cpp -o CMakeFiles/Prim.dir/ImageElaborator.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/barti/CLionProjects/PrimProject/Prim/ImageElaborator.cpp -o CMakeFiles/Prim.dir/ImageElaborator.cpp.s
 
 CMakeFiles/Prim.dir/ImageElaborator.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Prim.dir/ImageElaborator.cpp.o.provides.build: CMakeFiles/Prim.dir/Im
 
 CMakeFiles/Prim.dir/FilterApplyer.cpp.o: CMakeFiles/Prim.dir/flags.make
 CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../FilterApplyer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Prim.dir/FilterApplyer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Prim.dir/FilterApplyer.cpp.o -c /home/edoardo/Documents/Prim_project/Prim/FilterApplyer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Prim.dir/FilterApplyer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Prim.dir/FilterApplyer.cpp.o -c /home/barti/CLionProjects/PrimProject/Prim/FilterApplyer.cpp
 
 CMakeFiles/Prim.dir/FilterApplyer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Prim.dir/FilterApplyer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edoardo/Documents/Prim_project/Prim/FilterApplyer.cpp > CMakeFiles/Prim.dir/FilterApplyer.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/barti/CLionProjects/PrimProject/Prim/FilterApplyer.cpp > CMakeFiles/Prim.dir/FilterApplyer.cpp.i
 
 CMakeFiles/Prim.dir/FilterApplyer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Prim.dir/FilterApplyer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edoardo/Documents/Prim_project/Prim/FilterApplyer.cpp -o CMakeFiles/Prim.dir/FilterApplyer.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/barti/CLionProjects/PrimProject/Prim/FilterApplyer.cpp -o CMakeFiles/Prim.dir/FilterApplyer.cpp.s
 
 CMakeFiles/Prim.dir/FilterApplyer.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/Prim.dir/FilterApplyer.cpp.o.provides.build: CMakeFiles/Prim.dir/Filt
 
 CMakeFiles/Prim.dir/KernelFilter.cpp.o: CMakeFiles/Prim.dir/flags.make
 CMakeFiles/Prim.dir/KernelFilter.cpp.o: ../KernelFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Prim.dir/KernelFilter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Prim.dir/KernelFilter.cpp.o -c /home/edoardo/Documents/Prim_project/Prim/KernelFilter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Prim.dir/KernelFilter.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Prim.dir/KernelFilter.cpp.o -c /home/barti/CLionProjects/PrimProject/Prim/KernelFilter.cpp
 
 CMakeFiles/Prim.dir/KernelFilter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Prim.dir/KernelFilter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edoardo/Documents/Prim_project/Prim/KernelFilter.cpp > CMakeFiles/Prim.dir/KernelFilter.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/barti/CLionProjects/PrimProject/Prim/KernelFilter.cpp > CMakeFiles/Prim.dir/KernelFilter.cpp.i
 
 CMakeFiles/Prim.dir/KernelFilter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Prim.dir/KernelFilter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edoardo/Documents/Prim_project/Prim/KernelFilter.cpp -o CMakeFiles/Prim.dir/KernelFilter.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/barti/CLionProjects/PrimProject/Prim/KernelFilter.cpp -o CMakeFiles/Prim.dir/KernelFilter.cpp.s
 
 CMakeFiles/Prim.dir/KernelFilter.cpp.o.requires:
 
@@ -169,7 +169,7 @@ Prim: CMakeFiles/Prim.dir/FilterApplyer.cpp.o
 Prim: CMakeFiles/Prim.dir/KernelFilter.cpp.o
 Prim: CMakeFiles/Prim.dir/build.make
 Prim: CMakeFiles/Prim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Prim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Prim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Prim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -189,6 +189,6 @@ CMakeFiles/Prim.dir/clean:
 .PHONY : CMakeFiles/Prim.dir/clean
 
 CMakeFiles/Prim.dir/depend:
-	cd /home/edoardo/Documents/Prim_project/Prim/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edoardo/Documents/Prim_project/Prim /home/edoardo/Documents/Prim_project/Prim /home/edoardo/Documents/Prim_project/Prim/cmake-build-debug /home/edoardo/Documents/Prim_project/Prim/cmake-build-debug /home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles/Prim.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/barti/CLionProjects/PrimProject/Prim /home/barti/CLionProjects/PrimProject/Prim /home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug /home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug /home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug/CMakeFiles/Prim.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Prim.dir/depend
 

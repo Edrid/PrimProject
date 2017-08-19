@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/edoardo/Documents/Prim_project/Prim/FilterApplyer.cpp
+/home/barti/CLionProjects/PrimProject/Prim/FilterApplyer.cpp
 FilterApplyer.h
-/home/edoardo/Documents/Prim_project/Prim/FilterApplyer.h
+/home/barti/CLionProjects/PrimProject/Prim/FilterApplyer.h
 Magick++.h
 -
 vector
@@ -16,7 +16,7 @@ vector
 memory
 -
 
-/home/edoardo/Documents/Prim_project/Prim/FilterApplyer.h
+/home/barti/CLionProjects/PrimProject/Prim/FilterApplyer.h
 Magick++.h
 -
 vector
@@ -24,15 +24,15 @@ vector
 memory
 -
 KernelFilter.h
-/home/edoardo/Documents/Prim_project/Prim/KernelFilter.h
+/home/barti/CLionProjects/PrimProject/Prim/KernelFilter.h
 
-/home/edoardo/Documents/Prim_project/Prim/ImageElaborator.cpp
+/home/barti/CLionProjects/PrimProject/Prim/ImageElaborator.cpp
 iostream
 -
 ImageElaborator.h
-/home/edoardo/Documents/Prim_project/Prim/ImageElaborator.h
+/home/barti/CLionProjects/PrimProject/Prim/ImageElaborator.h
 
-/home/edoardo/Documents/Prim_project/Prim/ImageElaborator.h
+/home/barti/CLionProjects/PrimProject/Prim/ImageElaborator.h
 Magick++.h
 -
 vector
@@ -40,11 +40,11 @@ vector
 memory
 -
 FilterApplyer.h
-/home/edoardo/Documents/Prim_project/Prim/FilterApplyer.h
+/home/barti/CLionProjects/PrimProject/Prim/FilterApplyer.h
 
-/home/edoardo/Documents/Prim_project/Prim/KernelFilter.cpp
+/home/barti/CLionProjects/PrimProject/Prim/KernelFilter.cpp
 KernelFilter.h
-/home/edoardo/Documents/Prim_project/Prim/KernelFilter.h
+/home/barti/CLionProjects/PrimProject/Prim/KernelFilter.h
 Magick++.h
 -
 vector
@@ -52,17 +52,17 @@ vector
 memory
 -
 
-/home/edoardo/Documents/Prim_project/Prim/KernelFilter.h
+/home/barti/CLionProjects/PrimProject/Prim/KernelFilter.h
 Magick++.h
 -
 iostream
 -
 
-/home/edoardo/Documents/Prim_project/Prim/main.cpp
+/home/barti/CLionProjects/PrimProject/Prim/main.cpp
 iostream
 -
 Magick++.h
 -
 ImageElaborator.h
-/home/edoardo/Documents/Prim_project/Prim/ImageElaborator.h
+/home/barti/CLionProjects/PrimProject/Prim/ImageElaborator.h
 
