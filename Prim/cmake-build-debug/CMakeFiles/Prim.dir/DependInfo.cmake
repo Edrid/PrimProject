@@ -7,6 +7,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/barti/CLionProjects/PrimProject/Prim/FilterApplyer.cpp" "/home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug/CMakeFiles/Prim.dir/FilterApplyer.cpp.o"
   "/home/barti/CLionProjects/PrimProject/Prim/ImageElaborator.cpp" "/home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug/CMakeFiles/Prim.dir/ImageElaborator.cpp.o"
   "/home/barti/CLionProjects/PrimProject/Prim/KernelFilter.cpp" "/home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug/CMakeFiles/Prim.dir/KernelFilter.cpp.o"
+  "/home/barti/CLionProjects/PrimProject/Prim/RedoManager.cpp" "/home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug/CMakeFiles/Prim.dir/RedoManager.cpp.o"
+  "/home/barti/CLionProjects/PrimProject/Prim/UndoManager.cpp" "/home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug/CMakeFiles/Prim.dir/UndoManager.cpp.o"
   "/home/barti/CLionProjects/PrimProject/Prim/main.cpp" "/home/barti/CLionProjects/PrimProject/Prim/cmake-build-debug/CMakeFiles/Prim.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

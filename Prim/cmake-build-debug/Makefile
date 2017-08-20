@@ -204,6 +204,60 @@ KernelFilter.cpp.s:
 	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/KernelFilter.cpp.s
 .PHONY : KernelFilter.cpp.s
 
+RedoManager.o: RedoManager.cpp.o
+
+.PHONY : RedoManager.o
+
+# target to build an object file
+RedoManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/RedoManager.cpp.o
+.PHONY : RedoManager.cpp.o
+
+RedoManager.i: RedoManager.cpp.i
+
+.PHONY : RedoManager.i
+
+# target to preprocess a source file
+RedoManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/RedoManager.cpp.i
+.PHONY : RedoManager.cpp.i
+
+RedoManager.s: RedoManager.cpp.s
+
+.PHONY : RedoManager.s
+
+# target to generate assembly for a file
+RedoManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/RedoManager.cpp.s
+.PHONY : RedoManager.cpp.s
+
+UndoManager.o: UndoManager.cpp.o
+
+.PHONY : UndoManager.o
+
+# target to build an object file
+UndoManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/UndoManager.cpp.o
+.PHONY : UndoManager.cpp.o
+
+UndoManager.i: UndoManager.cpp.i
+
+.PHONY : UndoManager.i
+
+# target to preprocess a source file
+UndoManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/UndoManager.cpp.i
+.PHONY : UndoManager.cpp.i
+
+UndoManager.s: UndoManager.cpp.s
+
+.PHONY : UndoManager.s
+
+# target to generate assembly for a file
+UndoManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/UndoManager.cpp.s
+.PHONY : UndoManager.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -249,6 +303,12 @@ help:
 	@echo "... KernelFilter.o"
 	@echo "... KernelFilter.i"
 	@echo "... KernelFilter.s"
+	@echo "... RedoManager.o"
+	@echo "... RedoManager.i"
+	@echo "... RedoManager.s"
+	@echo "... UndoManager.o"
+	@echo "... UndoManager.i"
+	@echo "... UndoManager.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

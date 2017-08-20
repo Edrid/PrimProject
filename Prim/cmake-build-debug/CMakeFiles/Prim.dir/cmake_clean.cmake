@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Prim.dir/ImageElaborator.cpp.o"
   "CMakeFiles/Prim.dir/FilterApplyer.cpp.o"
   "CMakeFiles/Prim.dir/KernelFilter.cpp.o"
+  "CMakeFiles/Prim.dir/UndoManager.cpp.o"
+  "CMakeFiles/Prim.dir/RedoManager.cpp.o"
   "Prim.pdb"
   "Prim"
 )

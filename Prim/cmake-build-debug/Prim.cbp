@@ -102,6 +102,18 @@
 		<Unit filename="/home/barti/CLionProjects/PrimProject/Prim/KernelFilter.h">
 			<Option target="Prim"/>
 		</Unit>
+		<Unit filename="/home/barti/CLionProjects/PrimProject/Prim/RedoManager.cpp">
+			<Option target="Prim"/>
+		</Unit>
+		<Unit filename="/home/barti/CLionProjects/PrimProject/Prim/RedoManager.h">
+			<Option target="Prim"/>
+		</Unit>
+		<Unit filename="/home/barti/CLionProjects/PrimProject/Prim/UndoManager.cpp">
+			<Option target="Prim"/>
+		</Unit>
+		<Unit filename="/home/barti/CLionProjects/PrimProject/Prim/UndoManager.h">
+			<Option target="Prim"/>
+		</Unit>
 		<Unit filename="/home/barti/CLionProjects/PrimProject/Prim/main.cpp">
 			<Option target="Prim"/>
 		</Unit>
