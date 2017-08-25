@@ -13,6 +13,13 @@ CMakeFiles/Prim.dir/ImageElaborator.cpp.o: ../KernelFilter.h
 CMakeFiles/Prim.dir/KernelFilter.cpp.o: ../KernelFilter.cpp
 CMakeFiles/Prim.dir/KernelFilter.cpp.o: ../KernelFilter.h
 
+CMakeFiles/Prim.dir/RedoManager.cpp.o: ../RedoManager.cpp
+CMakeFiles/Prim.dir/RedoManager.cpp.o: ../RedoManager.h
+
+CMakeFiles/Prim.dir/UndoManager.cpp.o: ../RedoManager.h
+CMakeFiles/Prim.dir/UndoManager.cpp.o: ../UndoManager.cpp
+CMakeFiles/Prim.dir/UndoManager.cpp.o: ../UndoManager.h
+
 CMakeFiles/Prim.dir/main.cpp.o: ../FilterApplyer.h
 CMakeFiles/Prim.dir/main.cpp.o: ../ImageElaborator.h
 CMakeFiles/Prim.dir/main.cpp.o: ../KernelFilter.h

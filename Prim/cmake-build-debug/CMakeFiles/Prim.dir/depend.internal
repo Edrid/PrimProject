@@ -13,6 +13,13 @@ CMakeFiles/Prim.dir/ImageElaborator.cpp.o
 CMakeFiles/Prim.dir/KernelFilter.cpp.o
  /home/barti/CLionProjects/PrimProject/Prim/KernelFilter.cpp
  /home/barti/CLionProjects/PrimProject/Prim/KernelFilter.h
+CMakeFiles/Prim.dir/RedoManager.cpp.o
+ /home/barti/CLionProjects/PrimProject/Prim/RedoManager.cpp
+ /home/barti/CLionProjects/PrimProject/Prim/RedoManager.h
+CMakeFiles/Prim.dir/UndoManager.cpp.o
+ /home/barti/CLionProjects/PrimProject/Prim/RedoManager.h
+ /home/barti/CLionProjects/PrimProject/Prim/UndoManager.cpp
+ /home/barti/CLionProjects/PrimProject/Prim/UndoManager.h
 CMakeFiles/Prim.dir/main.cpp.o
  /home/barti/CLionProjects/PrimProject/Prim/FilterApplyer.h
  /home/barti/CLionProjects/PrimProject/Prim/ImageElaborator.h

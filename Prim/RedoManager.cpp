@@ -4,7 +4,9 @@
 
 #include "RedoManager.h"
 
-void RedoManager::redo() {
-    redoStack.top().display();
-    redoStack.pop();
-}
+Image RedoManager::redo() {
+    if (!redoVector.empty()) {
+     redoVector.pop_back();
+     return redoVector.back();
+    }
+} //non so cosa mettere nel caso redoVector sia vuoto...

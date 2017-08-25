@@ -12,24 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="877a7f94-905e-4f95-834e-87bd2ec5e3ee" name="Default" comment="added undo and redo... still need to set the notifyundo function and her call when a filter is applied">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RedoManager.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RedoManager.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UndoManager.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UndoManager.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Prim" afterPath="$PROJECT_DIR$/cmake-build-debug/Prim" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Prim.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/Prim.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RedoManager.cpp" afterPath="$PROJECT_DIR$/RedoManager.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RedoManager.h" afterPath="$PROJECT_DIR$/RedoManager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UndoManager.cpp" afterPath="$PROJECT_DIR$/UndoManager.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UndoManager.h" afterPath="$PROJECT_DIR$/UndoManager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/depend.make" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +47,7 @@
       <file leaf-file-name="ImageElaborator.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImageElaborator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
+            <state relative-caret-position="560">
               <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
               <folding>
                 <element signature="e#105#126#0" expanded="true" />
@@ -79,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UndoManager.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UndoManager.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UndoManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state relative-caret-position="458">
+              <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -92,8 +82,8 @@
       <file leaf-file-name="UndoManager.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UndoManager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="460">
+              <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding>
                 <element signature="e#95#111#0" expanded="true" />
               </folding>
@@ -104,18 +94,18 @@
       <file leaf-file-name="RedoManager.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RedoManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state relative-caret-position="240">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedoManager.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RedoManager.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RedoManager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="500">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="e#95#116#0" expanded="true" />
               </folding>
@@ -187,10 +177,10 @@
         <option value="$PROJECT_DIR$/FilterApplyer.h" />
         <option value="$PROJECT_DIR$/KernelFilter.cpp" />
         <option value="$PROJECT_DIR$/FilterApplyer.cpp" />
-        <option value="$PROJECT_DIR$/RedoManager.h" />
         <option value="$PROJECT_DIR$/UndoManager.h" />
-        <option value="$PROJECT_DIR$/UndoManager.cpp" />
         <option value="$PROJECT_DIR$/RedoManager.cpp" />
+        <option value="$PROJECT_DIR$/RedoManager.h" />
+        <option value="$PROJECT_DIR$/UndoManager.cpp" />
       </list>
     </option>
   </component>
@@ -243,6 +233,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -469,7 +460,8 @@
       <workItem from="1502956214115" duration="163000" />
       <workItem from="1502958048815" duration="50000" />
       <workItem from="1503130575944" duration="2309000" />
-      <workItem from="1503252522025" duration="5984000" />
+      <workItem from="1503252522025" duration="7420000" />
+      <workItem from="1503665881218" duration="6624000" />
     </task>
     <task id="LOCAL-00001" summary="Made header of ImageElaborator, start of the project.">
       <created>1502550171385</created>
@@ -534,17 +526,24 @@
       <option name="project" value="LOCAL" />
       <updated>1503130846452</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added undo and redo... still need to set the notifyundo function and her call when a filter is applied">
+      <created>1503258720212</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1503258720212</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42160000" />
+    <option name="totallyTimeSpent" value="50220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29463792" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29795468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32672232" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -652,9 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="e#42#67#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -733,9 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#42#67#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -917,9 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="e#42#67#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -966,7 +956,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageElaborator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
+        <state relative-caret-position="560">
           <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
           <folding>
             <element signature="e#105#126#0" expanded="true" />
@@ -974,39 +964,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UndoManager.cpp">
+    <entry file="file://$PROJECT_DIR$/RedoManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        <state relative-caret-position="240">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RedoManager.cpp">
+    <entry file="file://$PROJECT_DIR$/RedoManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="500">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#95#116#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UndoManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="460">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding>
             <element signature="e#95#111#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RedoManager.h">
+    <entry file="file://$PROJECT_DIR$/UndoManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <element signature="e#95#116#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="458">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

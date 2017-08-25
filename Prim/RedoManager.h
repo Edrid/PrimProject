@@ -13,11 +13,12 @@ using namespace std;
 
 class RedoManager {
 public:
-    void update(Image img){ redoStack.push(img);}
-    void redo();
+    void update(Image img){ redoVector.push_back(img);}
+    Image redo();
+    void reset(){redoVector.clear();}
 
 private:
-    stack<Image> redoStack;
+    vector<Image> redoVector;
 };
 
 

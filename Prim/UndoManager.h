@@ -8,20 +8,23 @@
 #include <stack>
 #include <Magick++.h>
 #include "RedoManager.h"
+#include <vector>
 
 using namespace Magick;
 using namespace std;
 
 class UndoManager {
 public:
-    void undo();
-    void update(Image img){undoStack.push(img);}
-    void notifyRedo(){ (*redoptr).update(undoStack.top());}
+    UndoManager(Image firstImg);
+    Image reset();
+    Image undo();
+    void update(Image img);
+    void notifyRedo(){ (*redoptr).update(undoVector.back());}
 
 private:
-    stack<Image> undoStack;  // non sono convinto se debba essere uno stack di immagini o di puntatori a immagini fammi sapere cosa ne pensi...
+    Image origImg;
     RedoManager* redoptr;
-
+    vector<Image> undoVector;   // non sono convinto se debba essere uno stack di immagini o di puntatori a immagini fammi sapere cosa ne pensi...
 };
 
 
