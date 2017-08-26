@@ -9,7 +9,9 @@
 #include "KernelFilter.h"
 
 class GaussianBlur : public KernelFilter{
+public:
     GaussianBlur(QuantumPointer redsp, QuantumPointer greensp, QuantumPointer bluesp, QuantumPointer alphasp) : KernelFilter(redsp, greensp, bluesp, alphasp) {}
+    void applyFilter();
 };
 
 

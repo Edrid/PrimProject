@@ -8,5 +8,6 @@ int main(int argc,char **argv) {
     ImageElaborator elaborator("/home/edoardo/Documents/Prim_project/image1.jpg");
     //elaborator.setImage("/home/edoardo/Documents/Prim_project/image1.jpg");
     //elaborator.imgToVectors();
+    elaborator.filterApplyer_->setKernelStrategy(FilterType::GaussianBlur);
     elaborator.display();
 }

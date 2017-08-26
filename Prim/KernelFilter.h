@@ -21,7 +21,9 @@ public:
 
 private:
     vector<vector<int>> convMatrix;
-    vector<vector<int>> convolute(vector<vector<int>> originalVals); //it modifies the variables right below
+protected:
+    vector<vector<int>> convolute(vector<vector<int>> *original, bool normalized); //it modifies the variables right below
+
     QuantumPointer reds_;
     QuantumPointer greens_;
     QuantumPointer blues_;

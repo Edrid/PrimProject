@@ -3,6 +3,7 @@
 //
 
 #include "FilterApplyer.h"
+#include "GaussianBlur.h"
 
 #include <Magick++.h>
 #include <vector>
@@ -11,7 +12,7 @@
 void FilterApplyer::setKernelStrategy(FilterType filterID) {
     delete strategy_;
     if(filterID == FilterType::GaussianBlur){
-        //strategy_ = new GaussianBlur();
+        strategy_ = new GaussianBlur(reds_, greens_, blues_, alphas_);
     }
 
     switch(filterID){

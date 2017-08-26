@@ -3,8 +3,8 @@
 
 using namespace Magick;
 
-std::vector<std::vector<int>> convolute(std::vector<std::vector<int>> &original, std::vector<std::vector<int>> &convMat){
-
+std::vector<std::vector<int>> convolute(std::vector<std::vector<int>> &original, std::vector<std::vector<int>> &convMat, bool normalized){
+    //NOTE ABOUT THE 'NORMALIZED' VARIABLE: if the variable is set to true, then the values get normalized (useful for the gaussian blur). Otherwise the values aren't normalized, for filters like "find edges" where the sum of the convolution matrix is zero, making the normalization an impossible operation
     //std::cout << "\nCalled convolution function" << std::endl;
 
     //TODO controllare di, eventualmente, non aver invertito length e height
@@ -46,15 +46,16 @@ std::vector<std::vector<int>> convolute(std::vector<std::vector<int>> &original,
             }
             //std::cout << "Sum = " << sum << std::endl;
             //QUICKFIX for the case of pixels <256 or pixels < 0
-            sum = sum/convSum; //divide only if the sum has to be normalised e.g. gaussian
+            if(normalized)
+                sum = sum/convSum; //divide only if the sum has to be normalised e.g. gaussian
 
-            /* Prima avevo messo un "if(sum < 0) sum = -sum; ma non so perchè, e fa una cosa strana e absta, non utile */
+            /* Prima avevo messo un "if(sum < 0) sum = -sum; ma non so perchè, e fa una cosa strana e basta, non utile. Però con ciò si ottiene un effetto psichedelico*/
 
             if(sum < 0)
                 sum = 0;
-            //std::cout << "Sum = " << sum%256 << std::endl;
             if(sum > 255)
                 sum = 255;
+
             convoluted.at(k).at(s) = sum;
         }
     }
@@ -68,7 +69,7 @@ int main(int argc,char **argv) {
     InitializeMagick(*argv);
     std::cout << "The quantum range is: " << (int)QuantumRange << std::endl;
 
-    Image img("/home/edoardo/Pictures/LalaMagick.jpg");
+    Image img("/home/edoardo/Pictures/immagineDiProva.jpg");
     /*img.display();
 
     Quantum r = 255, g = 255, b = 255;
@@ -109,12 +110,12 @@ int main(int argc,char **argv) {
     Image elaboratedImage(Geometry(img.size().width(),img.size().height()), Color(QuantumRange, QuantumRange, QuantumRange, 200));
     //elaboratedImage.display();
     //std::vector<std::vector<int>> convMatrix = {{1,2,1},{2,4,2},{1,2,1}}; //This is the gaussian blur kernel
-    std::vector<std::vector<int>> convMatrix = {{-1,-1,-1},{-1,8,-1},{-1,-1,-1}}; //This is the gaussian blur kernel
+    std::vector<std::vector<int>> convMatrix = {{-1,-1,-1},{-1,8,-1},{-1,-1,-1}}; //This is the find edges kernel
 
     //Apply the convolution
-    reds = convolute(reds, convMatrix);
-    greens = convolute(greens, convMatrix);
-    blues = convolute(blues, convMatrix);
+    reds = convolute(reds, convMatrix, false);
+    greens = convolute(greens, convMatrix, false);
+    blues = convolute(blues, convMatrix, false);
 
     std::cout << "Reds height is: " << reds.size() << "\t and the width is: " << reds.at(0).size() << std::endl;
     std::cout << "Greens height is: " << greens.size() << "\t and the width is: " << greens.at(0).size() << std::endl;

@@ -12,14 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b78aa5e9-b562-46c1-a81b-d5094dc7776d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImMagPlayground.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImMagPlayground.dir/main.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/ImMagPlayground" afterPath="$PROJECT_DIR$/cmake-build-debug/ImMagPlayground" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/cmake-build-debug/Prim" afterPath="$PROJECT_DIR$/../../Prim/cmake-build-debug/Prim" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../convolutionFunction/main.cpp" afterPath="$PROJECT_DIR$/../convolutionFunction/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../Prim/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/FilterApplyer.cpp" afterPath="$PROJECT_DIR$/../../Prim/FilterApplyer.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/GaussianBlur.cpp" afterPath="$PROJECT_DIR$/../../Prim/GaussianBlur.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/GaussianBlur.h" afterPath="$PROJECT_DIR$/../../Prim/GaussianBlur.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/ImageElaborator.h" afterPath="$PROJECT_DIR$/../../Prim/ImageElaborator.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/KernelFilter.cpp" afterPath="$PROJECT_DIR$/../../Prim/KernelFilter.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/KernelFilter.h" afterPath="$PROJECT_DIR$/../../Prim/KernelFilter.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/cmake-build-debug/CMakeFiles/Prim.dir/CXX.includecache" afterPath="$PROJECT_DIR$/../../Prim/cmake-build-debug/CMakeFiles/Prim.dir/CXX.includecache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/cmake-build-debug/CMakeFiles/Prim.dir/depend.internal" afterPath="$PROJECT_DIR$/../../Prim/cmake-build-debug/CMakeFiles/Prim.dir/depend.internal" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/cmake-build-debug/CMakeFiles/Prim.dir/depend.make" afterPath="$PROJECT_DIR$/../../Prim/cmake-build-debug/CMakeFiles/Prim.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Prim/main.cpp" afterPath="$PROJECT_DIR$/../../Prim/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,11 +53,11 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+            <state relative-caret-position="1479">
+              <caret line="105" column="33" lean-forward="false" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <element signature="e#2904#3352#0" expanded="false" />
+                <element signature="e#3251#3699#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -342,18 +350,25 @@
       <workItem from="1502721990214" duration="50000" />
       <workItem from="1502872631526" duration="349000" />
       <workItem from="1502884144688" duration="263000" />
-      <workItem from="1503764593591" duration="1326000" />
+      <workItem from="1503764593591" duration="3439000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed big pixels squares. Set max and min for pixel values, now it doesn't screw up">
+      <created>1503766244676</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1503766244676</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21683000" />
+    <option name="totallyTimeSpent" value="23796000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1366" height="742" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="-1" width="1366" height="742" extended-state="7" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.012839879" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32423756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -380,6 +395,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed big pixels squares. Set max and min for pixel values, now it doesn't screw up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed big pixels squares. Set max and min for pixel values, now it doesn't screw up" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="2" />
@@ -401,7 +420,7 @@
           <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#2904#3352#0" expanded="false" />
+            <element signature="e#3251#3699#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -420,7 +439,7 @@
           <caret line="129" column="49" lean-forward="false" selection-start-line="129" selection-start-column="49" selection-end-line="129" selection-end-column="49" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#2904#3352#0" expanded="false" />
+            <element signature="e#3251#3699#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -439,7 +458,7 @@
           <caret line="129" column="49" lean-forward="false" selection-start-line="129" selection-start-column="49" selection-end-line="129" selection-end-column="49" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#2904#3352#0" expanded="false" />
+            <element signature="e#3251#3699#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -458,7 +477,7 @@
           <caret line="129" column="49" lean-forward="false" selection-start-line="129" selection-start-column="49" selection-end-line="129" selection-end-column="49" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#2904#3352#0" expanded="false" />
+            <element signature="e#3251#3699#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -477,7 +496,7 @@
           <caret line="137" column="28" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="140" selection-end-column="5" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#2904#3352#0" expanded="false" />
+            <element signature="e#3251#3699#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -504,7 +523,7 @@
           <caret line="48" column="14" lean-forward="false" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#2904#3352#0" expanded="false" />
+            <element signature="e#3251#3699#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -523,7 +542,7 @@
           <caret line="106" column="77" lean-forward="false" selection-start-line="106" selection-start-column="77" selection-end-line="106" selection-end-column="77" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#2904#3352#0" expanded="false" />
+            <element signature="e#3251#3699#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -542,7 +561,7 @@
           <caret line="106" column="77" lean-forward="false" selection-start-line="106" selection-start-column="77" selection-end-line="106" selection-end-column="77" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#2904#3352#0" expanded="false" />
+            <element signature="e#3251#3699#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -561,7 +580,7 @@
           <caret line="124" column="21" lean-forward="false" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="21" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#2904#3352#0" expanded="false" />
+            <element signature="e#3251#3699#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -580,7 +599,7 @@
           <caret line="136" column="70" lean-forward="true" selection-start-line="136" selection-start-column="70" selection-end-line="136" selection-end-column="70" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#2904#3352#0" expanded="false" />
+            <element signature="e#3251#3699#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -599,7 +618,7 @@
           <caret line="107" column="39" lean-forward="true" selection-start-line="107" selection-start-column="39" selection-end-line="107" selection-end-column="39" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#2904#3352#0" expanded="false" />
+            <element signature="e#3251#3699#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -618,7 +637,7 @@
           <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#2904#3352#0" expanded="false" />
+            <element signature="e#3251#3699#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -637,7 +656,7 @@
           <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#2904#3352#0" expanded="false" />
+            <element signature="e#3251#3699#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -652,11 +671,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        <state relative-caret-position="1479">
+          <caret line="105" column="33" lean-forward="false" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#2904#3352#0" expanded="false" />
+            <element signature="e#3251#3699#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -8,14 +8,15 @@
 #include <vector>
 #include <memory>
 
-vector<vector<int>> KernelFilter::convolute(vector<vector<int>> &original) { //TODO
-    unsigned int height = original.size();
-    unsigned int width = original.at(0).size();
+vector<vector<int>> KernelFilter::convolute(vector<vector<int>> *original, bool normalized) {
+
+    unsigned int height = original->size();
+    unsigned int width = original->at(0).size();
 
     int convMatLength = (int) convMatrix.at(0).size();
     int convMatHeight = (int) convMatrix.size();
 
-    std::vector<std::vector<int>> convoluted(original.size(), std::vector<int>(original.at(0).size()));
+    std::vector<std::vector<int>> convoluted(original->size(), std::vector<int>(original->at(0).size()));
 
     int convSum = 0;
     //Calcola la somma degli elementi della matrice di convoluzione (nel caso serva la normalizzazione: non in questo caso)
@@ -37,17 +38,20 @@ vector<vector<int>> KernelFilter::convolute(vector<vector<int>> &original) { //T
                 for (int j = 0; j < convMatLength; j++) {
                     //TODO fare tutta la logica i.e. somma dei valori e divisione per totale della matrice di convoluzione, aggiungere matrice di convoluzione
                     //std::cout << "Image pixel at k+it1,s+it2 is: " << image[k+it1][s+it2] << std::endl << "convMat value is: \t\t" << convMat[i][j] << std::endl;
-                    sum = sum + original.at(k + it1).at(s + it2) * convMatrix.at(i).at(j);
+                    sum = sum + original->at(k + it1).at(s + it2) * convMatrix.at(i).at(j);
                     it2++;
                 }
                 it1++;
             }
-            sum = sum/convSum; //divide only if the sum has to be normalised e.g. gaussian NOTE: if I don't normalize the values, the effect becomes psychedelic
+            if(normalized)
+                sum = sum/convSum; //divide only if the sum has to be normalised e.g. gaussian NOTE: if I don't normalize the values
             if(sum < 0)
-                sum = -sum;
+                sum = 0;
+            if(sum > 255)
+                sum = 255;
             //std::cout << "Sum = " << sum%256 << std::endl;
             convoluted.at(k).at(s) = sum;
         }
-
-    } //TODO
+    }
+    return convoluted;
 }
