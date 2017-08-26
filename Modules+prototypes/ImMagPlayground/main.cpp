@@ -48,9 +48,13 @@ std::vector<std::vector<int>> convolute(std::vector<std::vector<int>> &original,
             //QUICKFIX for the case of pixels <256 or pixels < 0
             sum = sum/convSum; //divide only if the sum has to be normalised e.g. gaussian
 
+            /* Prima avevo messo un "if(sum < 0) sum = -sum; ma non so perchè, e fa una cosa strana e absta, non utile */
+
             if(sum < 0)
-                sum = -sum;
+                sum = 0;
             //std::cout << "Sum = " << sum%256 << std::endl;
+            if(sum > 255)
+                sum = 255;
             convoluted.at(k).at(s) = sum;
         }
     }
@@ -104,8 +108,8 @@ int main(int argc,char **argv) {
 
     Image elaboratedImage(Geometry(img.size().width(),img.size().height()), Color(QuantumRange, QuantumRange, QuantumRange, 200));
     //elaboratedImage.display();
-    std::vector<std::vector<int>> convMatrix = {{1,2,1},{2,4,2},{1,2,1}}; //This is the gaussian blur kernel
-    //std::vector<std::vector<int>> convMatrix = {{-1,-1,-1},{-1,8,-1},{-1,-1,-1}}; //This is the gaussian blur kernel
+    //std::vector<std::vector<int>> convMatrix = {{1,2,1},{2,4,2},{1,2,1}}; //This is the gaussian blur kernel
+    std::vector<std::vector<int>> convMatrix = {{-1,-1,-1},{-1,8,-1},{-1,-1,-1}}; //This is the gaussian blur kernel
 
     //Apply the convolution
     reds = convolute(reds, convMatrix);

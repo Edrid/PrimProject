@@ -26,6 +26,14 @@ memory
 KernelFilter.h
 /home/edoardo/Documents/Prim_project/Prim/KernelFilter.h
 
+/home/edoardo/Documents/Prim_project/Prim/GaussianBlur.cpp
+GaussianBlur.h
+/home/edoardo/Documents/Prim_project/Prim/GaussianBlur.h
+
+/home/edoardo/Documents/Prim_project/Prim/GaussianBlur.h
+KernelFilter.h
+/home/edoardo/Documents/Prim_project/Prim/KernelFilter.h
+
 /home/edoardo/Documents/Prim_project/Prim/ImageElaborator.cpp
 iostream
 -

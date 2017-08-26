@@ -5,6 +5,10 @@ CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../FilterApplyer.cpp
 CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../FilterApplyer.h
 CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../KernelFilter.h
 
+CMakeFiles/Prim.dir/GaussianBlur.cpp.o: ../GaussianBlur.cpp
+CMakeFiles/Prim.dir/GaussianBlur.cpp.o: ../GaussianBlur.h
+CMakeFiles/Prim.dir/GaussianBlur.cpp.o: ../KernelFilter.h
+
 CMakeFiles/Prim.dir/ImageElaborator.cpp.o: ../FilterApplyer.h
 CMakeFiles/Prim.dir/ImageElaborator.cpp.o: ../ImageElaborator.cpp
 CMakeFiles/Prim.dir/ImageElaborator.cpp.o: ../ImageElaborator.h
