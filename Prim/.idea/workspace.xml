@@ -11,20 +11,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="877a7f94-905e-4f95-834e-87bd2ec5e3ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Modules+prototypes/ImMagPlayground/cmake-build-debug/CMakeFiles/ImMagPlayground.dir/main.cpp.o" afterPath="$PROJECT_DIR$/../Modules+prototypes/ImMagPlayground/cmake-build-debug/CMakeFiles/ImMagPlayground.dir/main.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Modules+prototypes/ImMagPlayground/cmake-build-debug/ImMagPlayground" afterPath="$PROJECT_DIR$/../Modules+prototypes/ImMagPlayground/cmake-build-debug/ImMagPlayground" />
+    <list default="true" id="877a7f94-905e-4f95-834e-87bd2ec5e3ee" name="Default" comment="Added structure to gaussian filter; fixed the convolution function and optimized with the possibility of choice of normalization or not.&#10;&#10;Needs to be fixed, FilterType is ambiguous.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Prim" afterPath="$PROJECT_DIR$/cmake-build-debug/Prim" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Modules+prototypes/ImMagPlayground/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Modules+prototypes/ImMagPlayground/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Modules+prototypes/ImMagPlayground/main.cpp" afterPath="$PROJECT_DIR$/../Modules+prototypes/ImMagPlayground/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FilterApplyer.cpp" afterPath="$PROJECT_DIR$/FilterApplyer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GaussianBlur.cpp" afterPath="$PROJECT_DIR$/GaussianBlur.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GaussianBlur.h" afterPath="$PROJECT_DIR$/GaussianBlur.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageElaborator.h" afterPath="$PROJECT_DIR$/ImageElaborator.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KernelFilter.cpp" afterPath="$PROJECT_DIR$/KernelFilter.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KernelFilter.h" afterPath="$PROJECT_DIR$/KernelFilter.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Prim.dir/depend.make" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -52,7 +45,7 @@
       <file leaf-file-name="ImageElaborator.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImageElaborator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
+            <state relative-caret-position="170">
               <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
@@ -62,7 +55,7 @@
       <file leaf-file-name="ImageElaborator.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImageElaborator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
+            <state relative-caret-position="901">
               <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
               <folding>
                 <element signature="e#42#61#0" expanded="true" />
@@ -75,7 +68,7 @@
       <file leaf-file-name="FilterApplyer.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FilterApplyer.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
+            <state relative-caret-position="272">
               <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
               <folding>
                 <element signature="e#101#122#0" expanded="true" />
@@ -88,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/FilterApplyer.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="70" lean-forward="true" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+              <caret line="14" column="70" lean-forward="false" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
               <folding>
                 <element signature="e#42#68#0" expanded="true" />
               </folding>
@@ -99,7 +92,7 @@
       <file leaf-file-name="KernelFilter.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KernelFilter.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="425">
               <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="e#99#120#0" expanded="true" />
@@ -112,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/KernelFilter.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="73" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="73" />
+              <caret line="10" column="73" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="73" />
               <folding>
                 <element signature="e#42#67#0" expanded="true" />
               </folding>
@@ -150,6 +143,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -175,9 +173,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="-1" />
     <option name="width" value="1366" />
-    <option name="height" value="742" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -215,7 +212,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Modules+prototypes/ImMagPlayground" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -441,7 +438,8 @@
       <workItem from="1502872992531" duration="12493000" />
       <workItem from="1502956214115" duration="163000" />
       <workItem from="1502958048815" duration="4469000" />
-      <workItem from="1503763864279" duration="4863000" />
+      <workItem from="1503763864279" duration="4972000" />
+      <workItem from="1503999335544" duration="203000" />
     </task>
     <task id="LOCAL-00001" summary="Made header of ImageElaborator, start of the project.">
       <created>1502550171385</created>
@@ -513,11 +511,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502984206209</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added structure to gaussian filter; fixed the convolution function and optimized with the possibility of choice of normalization or not.&#10;&#10;Needs to be fixed, FilterType is ambiguous.">
+      <created>1503769505178</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1503769505178</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43149000" />
+    <option name="totallyTimeSpent" value="43461000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -529,18 +534,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1366" height="742" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="741" extended-state="0" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11706948" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25480768" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25480768" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25842696" sideWeight="0.5030211" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25801283" sideWeight="0.49697885" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32263243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115558915" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25682184" sideWeight="0.49697885" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32102728" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3964687" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -549,6 +553,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -566,6 +571,17 @@
               </option>
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Temp" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
               </option>
               <option name="COLUMN_ORDER">
                 <list>
@@ -595,7 +611,8 @@
     <MESSAGE value="Added class kernelFilter" />
     <MESSAGE value="commit 201708171021" />
     <MESSAGE value="translated convolution function, though it has to be fixed in order to &#10;work in this context" />
-    <option name="LAST_COMMIT_MESSAGE" value="translated convolution function, though it has to be fixed in order to &#10;work in this context" />
+    <MESSAGE value="Added structure to gaussian filter; fixed the convolution function and optimized with the possibility of choice of normalization or not.&#10;&#10;Needs to be fixed, FilterType is ambiguous." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added structure to gaussian filter; fixed the convolution function and optimized with the possibility of choice of normalization or not.&#10;&#10;Needs to be fixed, FilterType is ambiguous." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -970,7 +987,7 @@
     <entry file="file://$PROJECT_DIR$/KernelFilter.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="73" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="73" />
+          <caret line="10" column="73" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="73" />
           <folding>
             <element signature="e#42#67#0" expanded="true" />
           </folding>
@@ -995,7 +1012,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageElaborator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
+        <state relative-caret-position="901">
           <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
           <folding>
             <element signature="e#42#61#0" expanded="true" />
@@ -1006,7 +1023,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/KernelFilter.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="425">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#99#120#0" expanded="true" />
@@ -1017,7 +1034,7 @@
     <entry file="file://$PROJECT_DIR$/FilterApplyer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="70" lean-forward="true" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+          <caret line="14" column="70" lean-forward="false" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
           <folding>
             <element signature="e#42#68#0" expanded="true" />
           </folding>
@@ -1026,7 +1043,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageElaborator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
@@ -1034,7 +1051,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FilterApplyer.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="272">
           <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
           <folding>
             <element signature="e#101#122#0" expanded="true" />
@@ -1046,14 +1063,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
