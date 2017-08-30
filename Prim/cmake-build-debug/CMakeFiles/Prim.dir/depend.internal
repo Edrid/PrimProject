@@ -4,6 +4,7 @@
 CMakeFiles/Prim.dir/FilterApplyer.cpp.o
  /home/edoardo/Documents/Prim_project/Prim/FilterApplyer.cpp
  /home/edoardo/Documents/Prim_project/Prim/FilterApplyer.h
+ /home/edoardo/Documents/Prim_project/Prim/GaussianBlur.h
  /home/edoardo/Documents/Prim_project/Prim/KernelFilter.h
 CMakeFiles/Prim.dir/GaussianBlur.cpp.o
  /home/edoardo/Documents/Prim_project/Prim/GaussianBlur.cpp

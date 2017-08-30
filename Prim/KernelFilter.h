@@ -19,11 +19,10 @@ public:
     KernelFilter(QuantumPointer redsp, QuantumPointer greensp, QuantumPointer bluesp, QuantumPointer alphasp) : reds_(redsp), greens_(greensp), blues_(bluesp), alphas_(alphasp){} //Contructor TODO
     virtual void applyFilter() = 0;
 
-private:
-    vector<vector<int>> convMatrix;
+
 protected:
     vector<vector<int>> convolute(vector<vector<int>> *original, bool normalized); //it modifies the variables right below
-
+    vector<vector<int>> convMatrix;
     QuantumPointer reds_;
     QuantumPointer greens_;
     QuantumPointer blues_;

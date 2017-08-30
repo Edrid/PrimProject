@@ -3,6 +3,7 @@
 
 CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../FilterApplyer.cpp
 CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../FilterApplyer.h
+CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../GaussianBlur.h
 CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../KernelFilter.h
 
 CMakeFiles/Prim.dir/GaussianBlur.cpp.o: ../GaussianBlur.cpp

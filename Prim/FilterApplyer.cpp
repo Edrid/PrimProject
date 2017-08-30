@@ -10,7 +10,8 @@
 #include <memory>
 
 void FilterApplyer::setKernelStrategy(FilterType filterID) {
-    delete strategy_;
+    if(!strategy_)
+       delete strategy_;
     if(filterID == FilterType::GaussianBlur){
         strategy_ = new GaussianBlur(reds_, greens_, blues_, alphas_);
     }
@@ -26,4 +27,8 @@ void FilterApplyer::setKernelStrategy(FilterType filterID) {
 
     //TODO so on and so forth for all the filters available
 
+}
+
+void FilterApplyer::kernelFilter() {
+    strategy_->applyFilter();
 }

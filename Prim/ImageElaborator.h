@@ -23,7 +23,9 @@ public:
     ImageElaborator();
     void setImage(string path);
     void setImage(Image &img); //TODO implementation
-    void display(){ img->display(); }
+    void display(){
+        renderImage();
+        img->display(); }
     shared_ptr<FilterApplyer> filterApplyer_;
 
 
