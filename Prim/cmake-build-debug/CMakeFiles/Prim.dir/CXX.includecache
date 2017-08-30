@@ -6,11 +6,21 @@
 
 #IncludeRegexTransform: 
 
+/home/edoardo/Documents/Prim_project/Prim/EdgeDetection.cpp
+EdgeDetection.h
+/home/edoardo/Documents/Prim_project/Prim/EdgeDetection.h
+
+/home/edoardo/Documents/Prim_project/Prim/EdgeDetection.h
+KernelFilter.h
+/home/edoardo/Documents/Prim_project/Prim/KernelFilter.h
+
 /home/edoardo/Documents/Prim_project/Prim/FilterApplyer.cpp
 FilterApplyer.h
 /home/edoardo/Documents/Prim_project/Prim/FilterApplyer.h
 GaussianBlur.h
 /home/edoardo/Documents/Prim_project/Prim/GaussianBlur.h
+EdgeDetection.h
+/home/edoardo/Documents/Prim_project/Prim/EdgeDetection.h
 Magick++.h
 -
 vector

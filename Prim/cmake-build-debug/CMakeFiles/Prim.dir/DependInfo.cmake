@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/edoardo/Documents/Prim_project/Prim/EdgeDetection.cpp" "/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles/Prim.dir/EdgeDetection.cpp.o"
   "/home/edoardo/Documents/Prim_project/Prim/FilterApplyer.cpp" "/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles/Prim.dir/FilterApplyer.cpp.o"
   "/home/edoardo/Documents/Prim_project/Prim/GaussianBlur.cpp" "/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles/Prim.dir/GaussianBlur.cpp.o"
   "/home/edoardo/Documents/Prim_project/Prim/ImageElaborator.cpp" "/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles/Prim.dir/ImageElaborator.cpp.o"

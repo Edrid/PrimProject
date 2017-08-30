@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/edoardo/Documents/Prim_project/Prim/EdgeDetection.cpp">
+			<Option target="Prim"/>
+		</Unit>
+		<Unit filename="/home/edoardo/Documents/Prim_project/Prim/EdgeDetection.h">
+			<Option target="Prim"/>
+		</Unit>
 		<Unit filename="/home/edoardo/Documents/Prim_project/Prim/FilterApplyer.cpp">
 			<Option target="Prim"/>
 		</Unit>

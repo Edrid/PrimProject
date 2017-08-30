@@ -123,6 +123,33 @@ Prim/fast:
 	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/build
 .PHONY : Prim/fast
 
+EdgeDetection.o: EdgeDetection.cpp.o
+
+.PHONY : EdgeDetection.o
+
+# target to build an object file
+EdgeDetection.cpp.o:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/EdgeDetection.cpp.o
+.PHONY : EdgeDetection.cpp.o
+
+EdgeDetection.i: EdgeDetection.cpp.i
+
+.PHONY : EdgeDetection.i
+
+# target to preprocess a source file
+EdgeDetection.cpp.i:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/EdgeDetection.cpp.i
+.PHONY : EdgeDetection.cpp.i
+
+EdgeDetection.s: EdgeDetection.cpp.s
+
+.PHONY : EdgeDetection.s
+
+# target to generate assembly for a file
+EdgeDetection.cpp.s:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/EdgeDetection.cpp.s
+.PHONY : EdgeDetection.cpp.s
+
 FilterApplyer.o: FilterApplyer.cpp.o
 
 .PHONY : FilterApplyer.o
@@ -267,6 +294,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Prim"
+	@echo "... EdgeDetection.o"
+	@echo "... EdgeDetection.i"
+	@echo "... EdgeDetection.s"
 	@echo "... FilterApplyer.o"
 	@echo "... FilterApplyer.i"
 	@echo "... FilterApplyer.s"

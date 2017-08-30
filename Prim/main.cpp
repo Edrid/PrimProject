@@ -12,4 +12,8 @@ int main(int argc,char **argv) {
     elaborator.filterApplyer_->setKernelStrategy(::FilterType::GaussianBlur);
     elaborator.filterApplyer_->kernelFilter();
     elaborator.display();
+
+    elaborator.filterApplyer_->setKernelStrategy(::FilterType::EdgeDetection);
+    elaborator.filterApplyer_->kernelFilter();
+    elaborator.display();
 }
