@@ -12,13 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="877a7f94-905e-4f95-834e-87bd2ec5e3ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Prim" afterPath="$PROJECT_DIR$/cmake-build-debug/Prim" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RedoManager.cpp" afterPath="$PROJECT_DIR$/RedoManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RedoManager.h" afterPath="$PROJECT_DIR$/RedoManager.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UndoManager.cpp" afterPath="$PROJECT_DIR$/UndoManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UndoManager.h" afterPath="$PROJECT_DIR$/UndoManager.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,8 +66,8 @@
       <file leaf-file-name="UndoManager.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UndoManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+            <state relative-caret-position="240">
+              <caret line="12" column="80" lean-forward="false" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -165,9 +160,9 @@
         <option value="$PROJECT_DIR$/FilterApplyer.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/UndoManager.h" />
-        <option value="$PROJECT_DIR$/UndoManager.cpp" />
         <option value="$PROJECT_DIR$/RedoManager.h" />
         <option value="$PROJECT_DIR$/RedoManager.cpp" />
+        <option value="$PROJECT_DIR$/UndoManager.cpp" />
       </list>
     </option>
   </component>
@@ -451,7 +446,7 @@
       <workItem from="1503665881218" duration="6769000" />
       <workItem from="1503997108858" duration="887000" />
       <workItem from="1503998332907" duration="791000" />
-      <workItem from="1504171429615" duration="895000" />
+      <workItem from="1504171429615" duration="1123000" />
     </task>
     <task id="LOCAL-00001" summary="Made header of ImageElaborator, start of the project.">
       <created>1502550171385</created>
@@ -530,11 +525,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503672959263</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="set vector of pointers to image instead of a vector of images">
+      <created>1504172390022</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1504172390022</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52938000" />
+    <option name="totallyTimeSpent" value="53166000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -542,6 +544,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3084577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32672232" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25842696" sideWeight="0.5030211" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32254696" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -552,7 +555,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3964687" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32672232" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -605,7 +607,8 @@
     <MESSAGE value="try commit" />
     <MESSAGE value="added undo and redo... still need to set the notifyundo function and her call when a filter is applied" />
     <MESSAGE value="decided to use a vector instead of a stack in undo/redo... added reset function and changed return type of some function {undo(), redo()}" />
-    <option name="LAST_COMMIT_MESSAGE" value="decided to use a vector instead of a stack in undo/redo... added reset function and changed return type of some function {undo(), redo()}" />
+    <MESSAGE value="set vector of pointers to image instead of a vector of images" />
+    <option name="LAST_COMMIT_MESSAGE" value="set vector of pointers to image instead of a vector of images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -983,8 +986,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UndoManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        <state relative-caret-position="240">
+          <caret line="12" column="80" lean-forward="false" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
           <folding />
         </state>
       </provider>

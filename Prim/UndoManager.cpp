@@ -10,7 +10,7 @@ UndoManager::UndoManager(Image* firstImg) {
 }
 
 void UndoManager::update(Image* img) {
-    if(undoVector.size() < 5) // it's 5 because it's the limit we decided to have
+    if(undoVector.size() < 5) // it's 5 because it's the limit we decided to set
         undoVector.push_back(img);
     else{
         undoVector.erase(undoVector.begin());
@@ -24,7 +24,7 @@ Image* UndoManager::undo() {
         undoVector.pop_back();
         return undoVector.back();
     }
-} //non so cosa mettere nel caso undoVector sia vuoto...
+} //non so cosa mettere nel caso undoVector sia vuoto... (un exception throw?)
 
 Image* UndoManager::reset() {
     undoVector.clear();
