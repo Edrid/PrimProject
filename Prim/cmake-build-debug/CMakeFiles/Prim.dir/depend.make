@@ -5,7 +5,6 @@ CMakeFiles/Prim.dir/EdgeDetection.cpp.o: ../EdgeDetection.cpp
 CMakeFiles/Prim.dir/EdgeDetection.cpp.o: ../EdgeDetection.h
 CMakeFiles/Prim.dir/EdgeDetection.cpp.o: ../KernelFilter.h
 
-CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../EdgeDetection.h
 CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../FilterApplyer.cpp
 CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../FilterApplyer.h
 CMakeFiles/Prim.dir/FilterApplyer.cpp.o: ../GaussianBlur.h
