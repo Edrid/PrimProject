@@ -153,12 +153,62 @@ CMakeFiles/Prim.dir/KernelFilter.cpp.o.provides: CMakeFiles/Prim.dir/KernelFilte
 CMakeFiles/Prim.dir/KernelFilter.cpp.o.provides.build: CMakeFiles/Prim.dir/KernelFilter.cpp.o
 
 
+CMakeFiles/Prim.dir/GaussianBlur.cpp.o: CMakeFiles/Prim.dir/flags.make
+CMakeFiles/Prim.dir/GaussianBlur.cpp.o: ../GaussianBlur.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Prim.dir/GaussianBlur.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Prim.dir/GaussianBlur.cpp.o -c /home/edoardo/Documents/Prim_project/Prim/GaussianBlur.cpp
+
+CMakeFiles/Prim.dir/GaussianBlur.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Prim.dir/GaussianBlur.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edoardo/Documents/Prim_project/Prim/GaussianBlur.cpp > CMakeFiles/Prim.dir/GaussianBlur.cpp.i
+
+CMakeFiles/Prim.dir/GaussianBlur.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Prim.dir/GaussianBlur.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edoardo/Documents/Prim_project/Prim/GaussianBlur.cpp -o CMakeFiles/Prim.dir/GaussianBlur.cpp.s
+
+CMakeFiles/Prim.dir/GaussianBlur.cpp.o.requires:
+
+.PHONY : CMakeFiles/Prim.dir/GaussianBlur.cpp.o.requires
+
+CMakeFiles/Prim.dir/GaussianBlur.cpp.o.provides: CMakeFiles/Prim.dir/GaussianBlur.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/GaussianBlur.cpp.o.provides.build
+.PHONY : CMakeFiles/Prim.dir/GaussianBlur.cpp.o.provides
+
+CMakeFiles/Prim.dir/GaussianBlur.cpp.o.provides.build: CMakeFiles/Prim.dir/GaussianBlur.cpp.o
+
+
+CMakeFiles/Prim.dir/EdgeDetection.cpp.o: CMakeFiles/Prim.dir/flags.make
+CMakeFiles/Prim.dir/EdgeDetection.cpp.o: ../EdgeDetection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Prim.dir/EdgeDetection.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Prim.dir/EdgeDetection.cpp.o -c /home/edoardo/Documents/Prim_project/Prim/EdgeDetection.cpp
+
+CMakeFiles/Prim.dir/EdgeDetection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Prim.dir/EdgeDetection.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edoardo/Documents/Prim_project/Prim/EdgeDetection.cpp > CMakeFiles/Prim.dir/EdgeDetection.cpp.i
+
+CMakeFiles/Prim.dir/EdgeDetection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Prim.dir/EdgeDetection.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edoardo/Documents/Prim_project/Prim/EdgeDetection.cpp -o CMakeFiles/Prim.dir/EdgeDetection.cpp.s
+
+CMakeFiles/Prim.dir/EdgeDetection.cpp.o.requires:
+
+.PHONY : CMakeFiles/Prim.dir/EdgeDetection.cpp.o.requires
+
+CMakeFiles/Prim.dir/EdgeDetection.cpp.o.provides: CMakeFiles/Prim.dir/EdgeDetection.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/EdgeDetection.cpp.o.provides.build
+.PHONY : CMakeFiles/Prim.dir/EdgeDetection.cpp.o.provides
+
+CMakeFiles/Prim.dir/EdgeDetection.cpp.o.provides.build: CMakeFiles/Prim.dir/EdgeDetection.cpp.o
+
+
 # Object files for target Prim
 Prim_OBJECTS = \
 "CMakeFiles/Prim.dir/main.cpp.o" \
 "CMakeFiles/Prim.dir/ImageElaborator.cpp.o" \
 "CMakeFiles/Prim.dir/FilterApplyer.cpp.o" \
-"CMakeFiles/Prim.dir/KernelFilter.cpp.o"
+"CMakeFiles/Prim.dir/KernelFilter.cpp.o" \
+"CMakeFiles/Prim.dir/GaussianBlur.cpp.o" \
+"CMakeFiles/Prim.dir/EdgeDetection.cpp.o"
 
 # External object files for target Prim
 Prim_EXTERNAL_OBJECTS =
@@ -167,9 +217,11 @@ Prim: CMakeFiles/Prim.dir/main.cpp.o
 Prim: CMakeFiles/Prim.dir/ImageElaborator.cpp.o
 Prim: CMakeFiles/Prim.dir/FilterApplyer.cpp.o
 Prim: CMakeFiles/Prim.dir/KernelFilter.cpp.o
+Prim: CMakeFiles/Prim.dir/GaussianBlur.cpp.o
+Prim: CMakeFiles/Prim.dir/EdgeDetection.cpp.o
 Prim: CMakeFiles/Prim.dir/build.make
 Prim: CMakeFiles/Prim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Prim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Prim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Prim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -181,6 +233,8 @@ CMakeFiles/Prim.dir/requires: CMakeFiles/Prim.dir/main.cpp.o.requires
 CMakeFiles/Prim.dir/requires: CMakeFiles/Prim.dir/ImageElaborator.cpp.o.requires
 CMakeFiles/Prim.dir/requires: CMakeFiles/Prim.dir/FilterApplyer.cpp.o.requires
 CMakeFiles/Prim.dir/requires: CMakeFiles/Prim.dir/KernelFilter.cpp.o.requires
+CMakeFiles/Prim.dir/requires: CMakeFiles/Prim.dir/GaussianBlur.cpp.o.requires
+CMakeFiles/Prim.dir/requires: CMakeFiles/Prim.dir/EdgeDetection.cpp.o.requires
 
 .PHONY : CMakeFiles/Prim.dir/requires
 

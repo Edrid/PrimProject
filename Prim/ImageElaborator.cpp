@@ -51,4 +51,13 @@ void ImageElaborator::imgToVectors() {
 }
 
 //TODO renderImage()
-void ImageElaborator::renderImage() {}
+void ImageElaborator::renderImage() {
+    Image elaboratedImage(Geometry(img->size().width(),img->size().height()), Color(QuantumRange, QuantumRange, QuantumRange, 200));
+    for(unsigned int i = 0; i < elaboratedImage.size().height(); i++){
+        for(unsigned int j = 0; j < elaboratedImage.size().width(); j++){
+            elaboratedImage.pixelColor(j,i, Color(reds.at(i).at(j), greens.at(i).at(j), blues.at(i).at(j), 255));
+            //std::cout << "i = " << i << "\tj = " << j << std::endl;
+        }
+    }
+    *img = elaboratedImage;
+}

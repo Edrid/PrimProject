@@ -20,7 +20,7 @@ std::vector<std::vector<int>> convolute(std::vector<std::vector<int>> &original,
     std::cout << "Called convolution function" << std::endl;
 
     //TODO controllare di, eventualmente, non aver invertito length e height
-    unsigned long  length = original.at(0).size();
+    unsigned long length = original.at(0).size();
     unsigned long height = original.size();
 
     int convMatLength = (int)convMat.at(0).size();

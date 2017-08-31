@@ -23,7 +23,11 @@ public:
     ImageElaborator();
     void setImage(string path);
     void setImage(Image &img); //TODO implementation
-    void display(){ img->display(); }
+    void display(){
+        renderImage();
+        img->display(); }
+    shared_ptr<FilterApplyer> filterApplyer_;
+
 
 private:
     shared_ptr<Image> img;
@@ -34,7 +38,6 @@ private:
     vector<vector<int>> greens;
     vector<vector<int>> blues;
     vector<vector<int>> alphas;
-    shared_ptr<FilterApplyer> filterApplyer_;
 };
 
 

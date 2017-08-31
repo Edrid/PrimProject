@@ -123,6 +123,33 @@ Prim/fast:
 	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/build
 .PHONY : Prim/fast
 
+EdgeDetection.o: EdgeDetection.cpp.o
+
+.PHONY : EdgeDetection.o
+
+# target to build an object file
+EdgeDetection.cpp.o:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/EdgeDetection.cpp.o
+.PHONY : EdgeDetection.cpp.o
+
+EdgeDetection.i: EdgeDetection.cpp.i
+
+.PHONY : EdgeDetection.i
+
+# target to preprocess a source file
+EdgeDetection.cpp.i:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/EdgeDetection.cpp.i
+.PHONY : EdgeDetection.cpp.i
+
+EdgeDetection.s: EdgeDetection.cpp.s
+
+.PHONY : EdgeDetection.s
+
+# target to generate assembly for a file
+EdgeDetection.cpp.s:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/EdgeDetection.cpp.s
+.PHONY : EdgeDetection.cpp.s
+
 FilterApplyer.o: FilterApplyer.cpp.o
 
 .PHONY : FilterApplyer.o
@@ -149,6 +176,33 @@ FilterApplyer.s: FilterApplyer.cpp.s
 FilterApplyer.cpp.s:
 	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/FilterApplyer.cpp.s
 .PHONY : FilterApplyer.cpp.s
+
+GaussianBlur.o: GaussianBlur.cpp.o
+
+.PHONY : GaussianBlur.o
+
+# target to build an object file
+GaussianBlur.cpp.o:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/GaussianBlur.cpp.o
+.PHONY : GaussianBlur.cpp.o
+
+GaussianBlur.i: GaussianBlur.cpp.i
+
+.PHONY : GaussianBlur.i
+
+# target to preprocess a source file
+GaussianBlur.cpp.i:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/GaussianBlur.cpp.i
+.PHONY : GaussianBlur.cpp.i
+
+GaussianBlur.s: GaussianBlur.cpp.s
+
+.PHONY : GaussianBlur.s
+
+# target to generate assembly for a file
+GaussianBlur.cpp.s:
+	$(MAKE) -f CMakeFiles/Prim.dir/build.make CMakeFiles/Prim.dir/GaussianBlur.cpp.s
+.PHONY : GaussianBlur.cpp.s
 
 ImageElaborator.o: ImageElaborator.cpp.o
 
@@ -240,9 +294,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Prim"
+	@echo "... EdgeDetection.o"
+	@echo "... EdgeDetection.i"
+	@echo "... EdgeDetection.s"
 	@echo "... FilterApplyer.o"
 	@echo "... FilterApplyer.i"
 	@echo "... FilterApplyer.s"
+	@echo "... GaussianBlur.o"
+	@echo "... GaussianBlur.i"
+	@echo "... GaussianBlur.s"
 	@echo "... ImageElaborator.o"
 	@echo "... ImageElaborator.i"
 	@echo "... ImageElaborator.s"
