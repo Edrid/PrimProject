@@ -4,13 +4,13 @@
 
 #include "UndoManager.h"
 
-UndoManager::UndoManager(Image firstImg) {
+UndoManager::UndoManager(Image* firstImg) {
     undoVector.push_back(firstImg);
     origImg = firstImg;
 }
 
-void UndoManager::update(Image img) {
-    if(undoVector.size() < 5)
+void UndoManager::update(Image* img) {
+    if(undoVector.size() < 5) // it's 5 because it's the limit we decided to have
         undoVector.push_back(img);
     else{
         undoVector.erase(undoVector.begin());
@@ -18,7 +18,7 @@ void UndoManager::update(Image img) {
     }
 }
 
-Image UndoManager::undo() {
+Image* UndoManager::undo() {
     if(!undoVector.empty()){
         notifyRedo();
         undoVector.pop_back();
@@ -26,7 +26,7 @@ Image UndoManager::undo() {
     }
 } //non so cosa mettere nel caso undoVector sia vuoto...
 
-Image UndoManager::reset() {
+Image* UndoManager::reset() {
     undoVector.clear();
     (*redoptr).reset();
     return origImg;

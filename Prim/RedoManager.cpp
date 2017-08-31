@@ -4,7 +4,7 @@
 
 #include "RedoManager.h"
 
-Image RedoManager::redo() {
+Image* RedoManager::redo() {
     if (!redoVector.empty()) {
      redoVector.pop_back();
      return redoVector.back();

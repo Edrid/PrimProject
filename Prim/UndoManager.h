@@ -15,16 +15,16 @@ using namespace std;
 
 class UndoManager {
 public:
-    UndoManager(Image firstImg);
-    Image reset();
-    Image undo();
-    void update(Image img);
+    UndoManager(Image* firstImg);
+    Image* reset();
+    Image* undo();
+    void update(Image* img);
     void notifyRedo(){ (*redoptr).update(undoVector.back());}
 
 private:
-    Image origImg;
+    Image* origImg;
     RedoManager* redoptr;
-    vector<Image> undoVector;   // non sono convinto se debba essere uno stack di immagini o di puntatori a immagini fammi sapere cosa ne pensi...
+    vector<Image*> undoVector;   // non sono convinto se debba essere uno stack di immagini o di puntatori a immagini fammi sapere cosa ne pensi...
 };
 
 
