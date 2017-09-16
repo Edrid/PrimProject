@@ -19,8 +19,6 @@ FilterApplyer.h
 /home/edoardo/Documents/Prim_project/Prim/FilterApplyer.h
 GaussianBlur.h
 /home/edoardo/Documents/Prim_project/Prim/GaussianBlur.h
-EdgeDetection.h
-/home/edoardo/Documents/Prim_project/Prim/EdgeDetection.h
 Magick++.h
 -
 vector
