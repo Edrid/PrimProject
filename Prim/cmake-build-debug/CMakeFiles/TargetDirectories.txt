@@ -1,3 +1,0 @@
-/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/edoardo/Documents/Prim_project/Prim/cmake-build-debug/CMakeFiles/Prim.dir
