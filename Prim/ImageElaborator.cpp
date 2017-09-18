@@ -10,7 +10,9 @@
 ImageElaborator::ImageElaborator(string path) {
     setImage(path);
     imgToVectors();
-    filterApplyer_ = make_shared<FilterApplyer>(&reds, &greens, &blues, &alphas);
+    undoPtr = new UndoManager(&reds, &greens, &blues, &alphas);
+    filterApplyer_ = make_shared<FilterApplyer>(&reds, &greens, &blues, &alphas, undoPtr);
+    // TODO undoPtr = new UndoManager(); ... deve passare i 4 puntatori ai vettori (*reds *greens *blues *alphas) ... metterlo in tutti i costruttori
 } //Order: OK, compilier knows 'setImage()' exists
 ImageElaborator::ImageElaborator() {}
 
@@ -52,7 +54,7 @@ void ImageElaborator::imgToVectors() {
 
 //TODO renderImage()
 void ImageElaborator::renderImage() {
-    Image elaboratedImage(Geometry(img->size().width(),img->size().height()), Color(QuantumRange, QuantumRange, QuantumRange, 200));
+    Image elaboratedImage(Geometry(img->size().width(),img->size().height()), Color(QuantumRange, QuantumRange, QuantumRange, QuantumRange));
     for(unsigned int i = 0; i < elaboratedImage.size().height(); i++){
         for(unsigned int j = 0; j < elaboratedImage.size().width(); j++){
             elaboratedImage.pixelColor(j,i, Color(reds.at(i).at(j), greens.at(i).at(j), blues.at(i).at(j), 255));

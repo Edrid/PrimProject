@@ -10,8 +10,8 @@
 
 vector<vector<int>> KernelFilter::convolute(vector<vector<int>> *original, bool normalized) {
 
-    unsigned int height = original->size();
-    unsigned int width = original->at(0).size();
+    unsigned long height = original->size();
+    unsigned long width = original->at(0).size();
 
     int convMatLength = (int) convMatrix.at(0).size();
     int convMatHeight = (int) convMatrix.size();

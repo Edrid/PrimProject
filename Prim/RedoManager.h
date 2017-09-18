@@ -10,15 +10,25 @@
 
 using namespace Magick;
 using namespace std;
+typedef vector<vector<int>>* QuantumPointer;
+typedef vector<vector<int>> QuantumValues;
 
 class RedoManager {
 public:
-    void update(Image* img){ redoVector.push_back(img);}
-    Image* redo();
-    void reset(){redoVector.clear();}
+    RedoManager(QuantumPointer reds, QuantumPointer greens, QuantumPointer blues, QuantumPointer alphas) : origReds(reds), origGreens(greens), origBlues(blues), origAlphas(alphas){}
+    void update();
+    void redo();
+    void reset(){redsRedoVector.clear(); greensRedoVector.clear(); bluesRedoVector.clear(); alphasRedoVector.clear();}
 
 private:
-    vector<Image*> redoVector;
+    QuantumPointer origReds;
+    QuantumPointer origBlues;
+    QuantumPointer origGreens;
+    QuantumPointer origAlphas;
+    vector<QuantumValues> redsRedoVector;
+    vector<QuantumValues> greensRedoVector;
+    vector<QuantumValues> bluesRedoVector;
+    vector<QuantumValues> alphasRedoVector;
 };
 
 

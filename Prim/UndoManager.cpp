@@ -4,30 +4,60 @@
 
 #include "UndoManager.h"
 
-UndoManager::UndoManager(Image* firstImg) {
-    undoVector.push_back(firstImg);
-    origImg = firstImg;
+UndoManager::UndoManager(QuantumPointer reds, QuantumPointer greens, QuantumPointer blues, QuantumPointer alphas) {
+    origReds = reds;
+    origGreens = greens;
+    origBlues = blues;
+    origAlphas = alphas;
+    redoptr = new RedoManager(origReds, origGreens, origBlues, origAlphas);
+    firstReds = *reds;
+    firstGreens = *greens;
+    firstBlues = *blues;
+    firstAlphas = *alphas;
 }
 
-void UndoManager::update(Image* img) {
-    if(undoVector.size() < 5) // it's 5 because it's the limit we decided to set
-        undoVector.push_back(img);
+void UndoManager::update() {
+    int size = static_cast<int>(redsUndoVector.size());
+    if(size < 5 ){
+        redsUndoVector.push_back(*origReds);
+        greensUndoVector.push_back(*origGreens);
+        bluesUndoVector.push_back(*origBlues);
+        alphasUndoVector.push_back(*origAlphas);
+    }
     else{
-        undoVector.erase(undoVector.begin());
-        undoVector.push_back(img);
+        redsUndoVector.erase(redsUndoVector.begin());
+        redsUndoVector.push_back(*origReds);
+        greensUndoVector.erase(greensUndoVector.begin());
+        greensUndoVector.push_back(*origGreens);
+        bluesUndoVector.erase(bluesUndoVector.begin());
+        bluesUndoVector.push_back(*origBlues);
+        alphasUndoVector.erase(alphasUndoVector.begin());
+        alphasUndoVector.push_back(*origAlphas);
     }
 }
 
-Image* UndoManager::undo() {
-    if(!undoVector.empty()){
+void UndoManager::undo() {
+    if(!redsUndoVector.empty()){
         notifyRedo();
-        undoVector.pop_back();
-        return undoVector.back();
+        *origReds = redsUndoVector.back();
+        redsUndoVector.pop_back();
+        *origGreens = greensUndoVector.back();
+        greensUndoVector.pop_back();
+        *origBlues = bluesUndoVector.back();
+        bluesUndoVector.pop_back();
+        *origAlphas = alphasUndoVector.back();
+        alphasUndoVector.pop_back();
     }
-} //non so cosa mettere nel caso undoVector sia vuoto... (un exception throw?)
+}
 
-Image* UndoManager::reset() {
-    undoVector.clear();
+void UndoManager::reset() {
+    redsUndoVector.clear();
+    greensUndoVector.clear();
+    bluesUndoVector.clear();
+    alphasUndoVector.clear();
     (*redoptr).reset();
-    return origImg;
+    *origReds = firstReds;
+    *origGreens = firstGreens;
+    *origBlues = firstBlues;
+    *origAlphas = firstAlphas;
 }
