@@ -9,11 +9,13 @@
 #include <vector>
 #include <memory>
 #include "FilterApplyer.h"
+#include "UndoManager.h"
 
 using namespace Magick;
 using namespace std;
 
 //typedef shared_ptr<vector<vector<int>>> QuantumPointer;
+typedef vector<vector<int>>* QuantumPointer;
 
 //Remember, the ImageElaborator always has to have the quantum vectors updated with the current values.
 class ImageElaborator {
@@ -27,7 +29,7 @@ public:
         renderImage();
         img->display(); }
     shared_ptr<FilterApplyer> filterApplyer_;
-
+    UndoManager *undoPtr;
 
 private:
     shared_ptr<Image> img;
@@ -38,6 +40,7 @@ private:
     vector<vector<int>> greens;
     vector<vector<int>> blues;
     vector<vector<int>> alphas;
+    // messi i puntatori
 };
 
 

@@ -10,18 +10,18 @@
 #include <vector>
 #include <memory>
 
-void FilterApplyer::setKernelStrategy(FilterType filterID) {
+void FilterApplyer::setKernelStrategy(FilterTypes filterID) {
     if(!strategy_)
        delete strategy_;
-    /*if(filterID == FilterType::GaussianBlur){
+    /*if(filterID == FilterTypes::GaussianBlur){
         strategy_ = new GaussianBlur(reds_, greens_, blues_, alphas_);
     }*/
 
     switch(filterID){
-        case FilterType::GaussianBlur:
+        case FilterTypes::GaussianBlur:
             strategy_ = new GaussianBlur(reds_, greens_, blues_, alphas_);
             break;
-        case FilterType::EdgeDetection:
+        case FilterTypes::EdgeDetection:
             strategy_ = new EdgeDetection(reds_, greens_, blues_, alphas_); //TODO to be implemented
             break;
         }
@@ -31,5 +31,6 @@ void FilterApplyer::setKernelStrategy(FilterType filterID) {
 }
 
 void FilterApplyer::kernelFilter() {
+    notifyUndo();
     strategy_->applyFilter();
 }
