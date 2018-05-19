@@ -9,55 +9,72 @@ UndoManager::UndoManager(QuantumPointer reds, QuantumPointer greens, QuantumPoin
     origGreens = greens;
     origBlues = blues;
     origAlphas = alphas;
-    redoptr = new RedoManager(origReds, origGreens, origBlues, origAlphas);
-    firstReds = *reds;
-    firstGreens = *greens;
-    firstBlues = *blues;
-    firstAlphas = *alphas;
+    redsUndoArrayPointer = new QuantumValues[5];
+    redsRedoArrayPointer = new QuantumValues[5];
+    greensUndoArrayPointer = new QuantumValues[5];
+    greensRedoArrayPointer = new QuantumValues[5];
+    bluesUndoArrayPointer = new QuantumValues[5];
+    bluesRedoArrayPointer = new QuantumValues[5];
+    alphasUndoArrayPointer = new QuantumValues[5];
+    alphasRedoArrayPointer = new QuantumValues[5];
 }
 
 void UndoManager::update() {
-    int size = static_cast<int>(redsUndoVector.size());
-    if(size < 5 ){
-        redsUndoVector.push_back(*origReds);
-        greensUndoVector.push_back(*origGreens);
-        bluesUndoVector.push_back(*origBlues);
-        alphasUndoVector.push_back(*origAlphas);
+    if(nUndoElements < 6 ){                               // è un valore scelto da noi
+        redsUndoArrayPointer[lastUndo] = *origReds;
+        greensUndoArrayPointer[lastUndo] = *origGreens;
+        bluesUndoArrayPointer[lastUndo] = *origBlues;
+        alphasUndoArrayPointer[lastUndo] = *origAlphas;
+        nUndoElements++;
+        lastUndo = (lastUndo + 1) % 5;
     }
     else{
-        redsUndoVector.erase(redsUndoVector.begin());
-        redsUndoVector.push_back(*origReds);
-        greensUndoVector.erase(greensUndoVector.begin());
-        greensUndoVector.push_back(*origGreens);
-        bluesUndoVector.erase(bluesUndoVector.begin());
-        bluesUndoVector.push_back(*origBlues);
-        alphasUndoVector.erase(alphasUndoVector.begin());
-        alphasUndoVector.push_back(*origAlphas);
+        redsUndoArrayPointer[firstUndo] = *origReds;
+        greensUndoArrayPointer[firstUndo] = *origGreens;
+        bluesUndoArrayPointer[firstUndo] = *origBlues;
+        alphasUndoArrayPointer[firstUndo] = *origAlphas;
+        lastUndo = (lastUndo + 1) % 5;
+        firstUndo = (firstUndo + 1) % 5;
+    }
+}
+
+void UndoManager::updateRedo() {
+    if(nUndoElements < 6 ){
+        redsRedoArrayPointer[lastRedo] = *origReds;
+        greensRedoArrayPointer[lastRedo] = *origGreens;
+        bluesRedoArrayPointer[lastRedo] = *origBlues;
+        alphasRedoArrayPointer[lastRedo] = *origAlphas;
+        nRedoElements++;
+        lastRedo = (lastRedo + 1) % 5;
+    }
+    else{
+        redsRedoArrayPointer[firstRedo] = *origReds;
+        greensRedoArrayPointer[firstRedo] = *origGreens;
+        bluesRedoArrayPointer[firstRedo] = *origBlues;
+        alphasRedoArrayPointer[firstRedo] = *origAlphas;
+        lastRedo = (lastRedo + 1) % 5;
+        firstRedo = (firstRedo + 1) % 5;
     }
 }
 
 void UndoManager::undo() {
-    if(!redsUndoVector.empty()){
-        notifyRedo();
-        *origReds = redsUndoVector.back();
-        redsUndoVector.pop_back();
-        *origGreens = greensUndoVector.back();
-        greensUndoVector.pop_back();
-        *origBlues = bluesUndoVector.back();
-        bluesUndoVector.pop_back();
-        *origAlphas = alphasUndoVector.back();
-        alphasUndoVector.pop_back();
-    }
+    if(nUndoElements < 1)
+        return;  //TODO eccezione
+    updateRedo();
+    *origReds = redsUndoArrayPointer[lastUndo-1];
+    *origGreens = greensUndoArrayPointer[lastUndo-1];
+    *origBlues = bluesUndoArrayPointer[lastUndo-1];
+    *origAlphas = alphasUndoArrayPointer[lastUndo-1];
+    lastUndo = (lastUndo - 1) % 5;
 }
 
-void UndoManager::reset() {
-    redsUndoVector.clear();
-    greensUndoVector.clear();
-    bluesUndoVector.clear();
-    alphasUndoVector.clear();
-    (*redoptr).reset();
-    *origReds = firstReds;
-    *origGreens = firstGreens;
-    *origBlues = firstBlues;
-    *origAlphas = firstAlphas;
+void UndoManager::redo() {
+    if(nRedoElements < 1)
+        return; //TODO eccezione
+    update();
+    *origReds = redsRedoArrayPointer[lastRedo-1];
+    *origGreens = greensRedoArrayPointer[lastRedo-1];
+    *origBlues = bluesRedoArrayPointer[lastRedo-1];
+    *origAlphas = alphasRedoArrayPointer[lastRedo-1];
+    lastRedo = (lastRedo - 1) % 5;
 }

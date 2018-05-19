@@ -7,7 +7,6 @@
 
 #include <stack>
 #include <Magick++.h>
-#include "RedoManager.h"
 #include <vector>
 
 using namespace Magick;
@@ -18,27 +17,34 @@ typedef vector<vector<int>> QuantumValues;
 class UndoManager {
 public:
     UndoManager(QuantumPointer reds, QuantumPointer greens, QuantumPointer blues, QuantumPointer alphas);
-    void reset();
+    //void reset();
     void undo();
+    void redo();
     void update();
-    RedoManager* redoptr;
+    void updateRedo();
+   // ~UndoManager();
 
 private:
-    void notifyRedo(){redoptr->update();}
-    QuantumValues firstReds;
-    QuantumValues firstGreens; // valori dell'immagine di partenza
-    QuantumValues firstBlues;
-    QuantumValues firstAlphas;
+    int nUndoElements = 0;
+    int firstUndo = 0;
+    int lastUndo = 0;
+    int nRedoElements = 0;
+    int firstRedo = 0;
+    int lastRedo = 0;
+    QuantumValues* redsUndoArrayPointer;
+    QuantumValues* greensUndoArrayPointer;
+    QuantumValues* bluesUndoArrayPointer;
+    QuantumValues* alphasUndoArrayPointer;
+    QuantumValues* redsRedoArrayPointer;
+    QuantumValues* greensRedoArrayPointer;
+    QuantumValues* bluesRedoArrayPointer;
+    QuantumValues* alphasRedoArrayPointer;
     QuantumPointer origReds;
     QuantumPointer origBlues;
     QuantumPointer origGreens; // questi sono gli stessi puntatori che usa l'ImageElaborator
     QuantumPointer origAlphas;
-    vector<QuantumValues> redsUndoVector;
-    vector<QuantumValues> greensUndoVector; // questi sono i valori
-    vector<QuantumValues> bluesUndoVector;
-    vector<QuantumValues> alphasUndoVector;
+
 };
-//TODO usare 4 vector di quantum pointers
-//TODO creare il costruttore di copia
+
 
 #endif //PRIM_UNDOMANAGER_H
