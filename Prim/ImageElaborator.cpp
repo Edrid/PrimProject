@@ -10,9 +10,10 @@
 ImageElaborator::ImageElaborator(string path) {
     setImage(path);
     imgToVectors();
-    undoPtr = new UndoManager(&reds, &greens, &blues, &alphas);
+    if(!undoPtr) //TODO controllare se funziona
+        delete undoPtr;
+    undoPtr = new UndoManager(&reds, &greens, &blues, &alphas);  //TODO metterlo in tutti i costruttori
     filterApplyer_ = make_shared<FilterApplyer>(&reds, &greens, &blues, &alphas, undoPtr);
-    // TODO undoPtr = new UndoManager(); ... deve passare i 4 puntatori ai vettori (*reds *greens *blues *alphas) ... metterlo in tutti i costruttori
 } //Order: OK, compilier knows 'setImage()' exists
 ImageElaborator::ImageElaborator() {}
 
