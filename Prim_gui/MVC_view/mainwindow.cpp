@@ -13,8 +13,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     this->elab = &elaborator;*/
 
 
-    elab = new ImageElaborator("/home/edoardo/Documents/Prim_project/image1.jpg"); //ISTANZIO QUI IL MODELLO
-    elab->setImage("/home/edoardo/Documents/PRIM_GUI__20180215/duomo.jpg");
+    elab = new ImageElaborator("/home/edoardo/Pictures/immagineDiProva.jpg"); //ISTANZIO QUI IL MODELLO
+    //elab->setImage("/home/edoardo/Documents/PRIM_GUI__20180215/duomo.jpg");
     controller = new MvcController(elab);
     elab->addObserver(this); //AGGIUNGO L'OBSERVER
 
