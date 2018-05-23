@@ -61,7 +61,7 @@ void UndoManager::updateRedo() {
 }
 
 void UndoManager::undo() {
-    if(nUndoElements < 1 && nUndoAvailable < 1)
+    if(nUndoElements < 1 || nUndoAvailable < 1)
         return;  //TODO eccezione
     updateRedo();
     *origReds = redsUndoArrayPointer[lastUndo-1];
@@ -73,7 +73,7 @@ void UndoManager::undo() {
 }
 
 void UndoManager::redo() {
-    if(nRedoElements < 1 && nRedoAvailable < 1)
+    if(nRedoElements < 1 || nRedoAvailable < 1)
         return; //TODO eccezione
     update();
     *origReds = redsRedoArrayPointer[lastRedo-1];

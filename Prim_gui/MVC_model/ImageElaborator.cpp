@@ -19,7 +19,6 @@ ImageElaborator::ImageElaborator(string path) {
 ImageElaborator::ImageElaborator() {}
 
 void ImageElaborator::setImage(string path) {
-    undoPtr->update();
     shared_ptr<Image> p(new Image(path)); //I need to use this temporary shared ptr, for some reason if i do img = new Image(path) it doesn't work. It doesn't work if I do Image i(path); img = &i; either
     img = p;
     imgToVectors();
