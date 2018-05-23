@@ -26,6 +26,7 @@ void UndoManager::update() {
         greensUndoArrayPointer[lastUndo] = *origGreens;
         bluesUndoArrayPointer[lastUndo] = *origBlues;
         alphasUndoArrayPointer[lastUndo] = *origAlphas;
+        nUndoAvailable++;
         nUndoElements++;
         lastUndo = (lastUndo + 1) % 5;
     }
@@ -46,6 +47,7 @@ void UndoManager::updateRedo() {
         bluesRedoArrayPointer[lastRedo] = *origBlues;
         alphasRedoArrayPointer[lastRedo] = *origAlphas;
         nRedoElements++;
+        nRedoAvailable++;
         lastRedo = (lastRedo + 1) % 5;
     }
     else{
@@ -59,7 +61,7 @@ void UndoManager::updateRedo() {
 }
 
 void UndoManager::undo() {
-    if(nUndoElements < 1)
+    if(nUndoElements < 1 && nUndoAvailable < 1)
         return;  //TODO eccezione
     updateRedo();
     *origReds = redsUndoArrayPointer[lastUndo-1];
@@ -67,10 +69,11 @@ void UndoManager::undo() {
     *origBlues = bluesUndoArrayPointer[lastUndo-1];
     *origAlphas = alphasUndoArrayPointer[lastUndo-1];
     lastUndo = (lastUndo - 1) % 5;
+    nUndoAvailable = nUndoAvailable - 1;
 }
 
 void UndoManager::redo() {
-    if(nRedoElements < 1)
+    if(nRedoElements < 1 && nRedoAvailable < 1)
         return; //TODO eccezione
     update();
     *origReds = redsRedoArrayPointer[lastRedo-1];
@@ -78,4 +81,5 @@ void UndoManager::redo() {
     *origBlues = bluesRedoArrayPointer[lastRedo-1];
     *origAlphas = alphasRedoArrayPointer[lastRedo-1];
     lastRedo = (lastRedo - 1) % 5;
+    nRedoAvailable = nRedoAvailable - 1;
 }

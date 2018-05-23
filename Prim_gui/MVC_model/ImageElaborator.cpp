@@ -10,8 +10,8 @@
 ImageElaborator::ImageElaborator(string path) {
     setImage(path);
     imgToVectors();
-    /*if(!undoPtr) //TODO controllare se funziona
-        delete undoPtr;*/
+    if(!undoPtr)
+        delete undoPtr;
     undoPtr = new UndoManager(&reds, &greens, &blues, &alphas);
     filterApplyer_ = make_shared<FilterApplyer>(&reds, &greens, &blues, &alphas, undoPtr);
     // TODO undoPtr = new UndoManager(); ... deve passare i 4 puntatori ai vettori (*reds *greens *blues *alphas) ... metterlo in tutti i costruttori
@@ -19,10 +19,7 @@ ImageElaborator::ImageElaborator(string path) {
 ImageElaborator::ImageElaborator() {}
 
 void ImageElaborator::setImage(string path) {
-    /*if(!undoPtr) //TODO controllare se funziona
-        delete undoPtr;
-    undoPtr = new UndoManager(&reds, &greens, &blues, &alphas);*/ //FIXME
-
+    undoPtr->update();
     shared_ptr<Image> p(new Image(path)); //I need to use this temporary shared ptr, for some reason if i do img = new Image(path) it doesn't work. It doesn't work if I do Image i(path); img = &i; either
     img = p;
     imgToVectors();
