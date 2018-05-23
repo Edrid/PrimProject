@@ -25,9 +25,11 @@ public:
    // ~UndoManager();
 
 private:
+    int nUndoAvailable = 0;
     int nUndoElements = 0;
     int firstUndo = 0;
     int lastUndo = 0;
+    int nRedoAvailable = 0;
     int nRedoElements = 0;
     int firstRedo = 0;
     int lastRedo = 0;
