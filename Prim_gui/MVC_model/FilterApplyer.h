@@ -25,6 +25,9 @@ public:
     //FilterApplyer();
     void kernelFilter(); //this method has all the necessary information to elaborate the quantums. TODO make sure that the quantum information is always updated (though they should be.. they're pointers after all)
     void setKernelStrategy(FilterTypes filterID);
+
+    void setUndoPtr(UndoManager *undoPtr);
+
 private:
     void notifyUndo();
     //A questo punto cambio i valori dei vettori e faccio renderizzare l'immagine all'ImageElaborator. TODO prima di chiamare qualunque metodo nell'ImageElaborator, assicurarsi che ci sia una chiamata all'undo manager

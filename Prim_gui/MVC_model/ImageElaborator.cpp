@@ -9,11 +9,6 @@
 
 ImageElaborator::ImageElaborator(string path) {
     setImage(path);
-    imgToVectors();
-    if(!undoPtr)
-        delete undoPtr;
-    undoPtr = new UndoManager(&reds, &greens, &blues, &alphas);
-    filterApplyer_ = make_shared<FilterApplyer>(&reds, &greens, &blues, &alphas, undoPtr);
     // TODO undoPtr = new UndoManager(); ... deve passare i 4 puntatori ai vettori (*reds *greens *blues *alphas) ... metterlo in tutti i costruttori
 } //Order: OK, compilier knows 'setImage()' exists
 ImageElaborator::ImageElaborator() {}
@@ -22,6 +17,12 @@ void ImageElaborator::setImage(string path) {
     shared_ptr<Image> p(new Image(path)); //I need to use this temporary shared ptr, for some reason if i do img = new Image(path) it doesn't work. It doesn't work if I do Image i(path); img = &i; either
     img = p;
     imgToVectors();
+    if(!undoPtr)
+        delete undoPtr;
+    undoPtr = new UndoManager(&reds, &greens, &blues, &alphas);
+    if(!filterApplyer_)
+        filterApplyer_ = NULL;
+    filterApplyer_ = make_shared<FilterApplyer>(&reds, &greens, &blues, &alphas, undoPtr);
 }
 
 void ImageElaborator::imgToVectors() {
