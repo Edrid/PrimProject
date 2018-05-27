@@ -13,7 +13,7 @@ public:
     GaussianBlur(QuantumPointer redsp, QuantumPointer greensp, QuantumPointer bluesp, QuantumPointer alphasp) : KernelFilter(redsp, greensp, bluesp, alphasp) {
         convMatrix = {{1,2,1},{2,4,2},{1,2,1}};
     }
-    void applyFilter();
+    void applyFilter() override;
 };
 
 

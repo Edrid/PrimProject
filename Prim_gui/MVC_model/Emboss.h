@@ -13,7 +13,7 @@ public:
     Emboss(QuantumPointer redsp, QuantumPointer greensp, QuantumPointer bluesp, QuantumPointer alphasp) : KernelFilter(redsp, greensp, bluesp, alphasp) {
         convMatrix = {{-2,-1-0},{-1,1,1},{0,1,2}};
     }
-    void applyFilter();
+    void applyFilter() override;
 };
 
 

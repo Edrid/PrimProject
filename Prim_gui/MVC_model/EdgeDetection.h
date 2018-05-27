@@ -13,7 +13,7 @@ public:
     EdgeDetection(QuantumPointer redsp, QuantumPointer greensp, QuantumPointer bluesp, QuantumPointer alphasp) : KernelFilter(redsp, greensp, bluesp, alphasp) {
         convMatrix = {{-1,-1,-1},{-1,8,-1},{-1,-1,-1}};
     }
-    void applyFilter();
+    void applyFilter() override;
 };
 
 

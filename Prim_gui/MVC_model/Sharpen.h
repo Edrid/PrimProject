@@ -13,7 +13,7 @@ public:
     Sharpen(QuantumPointer redsp, QuantumPointer greensp, QuantumPointer bluesp, QuantumPointer alphasp) : KernelFilter(redsp, greensp, bluesp, alphasp) {
         convMatrix = {{0,-1,0},{-1,5,-1},{0,-1,0}};
     }
-    void applyFilter();
+    void applyFilter() override;
 };
 
 #endif //PRIM_GUI_SHARPEN_H
