@@ -18,7 +18,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     virtual ~MainWindow();
     //virtual ~Observer(){};
-    void update(); //TODO implement MVC update (observer design pattern)
+    void update(); //DOne implement MVC update (observer design pattern)
 
 private:
     Ui::MainWindow *ui;

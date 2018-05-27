@@ -5,7 +5,7 @@
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
-    //FIXME istanzio il controller ed il modello nella mainwindow, è corretto? O è preferibile istanziarli nel main?
+    //istanzio il controller ed il modello nella mainwindow, è corretto? O è preferibile istanziarli nel main?
     ui->setupUi(this);
 
     //PROVA DI VISUALIZZAZIONE DI UN'IMMAGINE

@@ -28,7 +28,7 @@ vector<vector<int>> KernelFilter::convolute(vector<vector<int>> *original, bool 
     }
 
     float sum = 0;
-    int it1 = -1, it2 = -1; //TODO fix it1 and it2: they work only if the convolution matrix is 3x3
+    int it1 = -1, it2 = -1;
     //I primi due cicli sono definiti per tutta l'immagine
     for (unsigned long k = 1; k < height - 1; k++) { //6-1
         for (unsigned long s = 1; s < width - 1; s++) { //5-1

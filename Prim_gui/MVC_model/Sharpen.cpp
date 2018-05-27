@@ -5,7 +5,6 @@
 #include "Sharpen.h"
 
 void Sharpen::applyFilter() {
-    //TODO in pratica deve chiamare 'convolute' tutti e quattro i canali.
     /* Riepilogo fino a qua: prima di chiamare l'applyFilter, da qualche parte dev'essere stata messa la precedente
      * versione dell'immagine nello stack di undo. Qui si cambiano direttamente i valori dell'immagine. */
     *reds_ = convolute(reds_, false);

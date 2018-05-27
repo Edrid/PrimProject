@@ -11,7 +11,7 @@
 
 void FileSelector::openFile()
     {
-        //FIXME quando annullo la selezione del file si frizza tutto
+        //FIXed quando annullo la selezione del file si frizza tutto
         try {
             QString filename = QFileDialog::getOpenFileName(
                     this,

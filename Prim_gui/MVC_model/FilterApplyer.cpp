@@ -24,7 +24,7 @@ void FilterApplyer::setKernelStrategy(FilterTypes filterID) {
             strategy_ = new GaussianBlur(reds_, greens_, blues_, alphas_);
             break;
         case FilterTypes::EdgeDetection:
-            strategy_ = new EdgeDetection(reds_, greens_, blues_, alphas_); //TODO to be implemented
+            strategy_ = new EdgeDetection(reds_, greens_, blues_, alphas_);
             break;
         case FilterTypes::Sharpen:
             strategy_ = new Sharpen(reds_, greens_, blues_, alphas_);
@@ -33,7 +33,7 @@ void FilterApplyer::setKernelStrategy(FilterTypes filterID) {
             strategy_ = new Emboss(reds_, greens_, blues_, alphas_);
     }
 
-    //TODO so on and so forth for all the filters available
+    //so on and so forth for all the filters available
 
 }
 

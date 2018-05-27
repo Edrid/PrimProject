@@ -23,10 +23,10 @@ typedef vector<vector<int>>* QuantumPointer;
 class ImageElaborator : public virtual Subject{
 public:
     ImageElaborator(string path);
-    ImageElaborator(Image &img); //TODO in this constructor, also fill vectors
-    ImageElaborator();
+    //ImageElaborator(Image &img); // in this constructor, also fill vectors
+    //ImageElaborator();
     void setImage(string path);
-    void setImage(Image &img); //TODO implementation
+    //void setImage(Image &img); // implementation
     void saveImage(std::string path);
     void display(){
         renderImage();
@@ -35,7 +35,7 @@ public:
     shared_ptr<FilterApplyer> filterApplyer_;
     UndoManager *undoPtr;
 
-    void notify(); //TODO implementare il notify
+    void notify(); //done implementare il notify
     void addObserver(Observer* o){ observers.push_back(o); }
     void removeObserver(Observer* o){ observers.remove(o); }
 
@@ -51,7 +51,7 @@ private:
     vector<vector<int>> alphas;
     // messi i puntatori
     list<Observer*> observers;
-    //FIXME fare un reserve dei vectors
+    //DONE fare un reserve dei vectors
 
 };
 

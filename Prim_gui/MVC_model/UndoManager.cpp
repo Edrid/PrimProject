@@ -4,7 +4,7 @@
 
 #include "UndoManager.h"
 
-//FIXME fa un undo di troppo
+//FIXed fa un undo di troppo
 UndoManager::UndoManager(QuantumPointer reds, QuantumPointer greens, QuantumPointer blues, QuantumPointer alphas) {
     origReds = reds;
     origGreens = greens;

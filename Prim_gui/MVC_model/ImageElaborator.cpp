@@ -9,9 +9,9 @@
 
 ImageElaborator::ImageElaborator(string path) {
     setImage(path);
-    // TODO undoPtr = new UndoManager(); ... deve passare i 4 puntatori ai vettori (*reds *greens *blues *alphas) ... metterlo in tutti i costruttori
+    // done undoPtr = new UndoManager(); ... deve passare i 4 puntatori ai vettori (*reds *greens *blues *alphas) ... metterlo in tutti i costruttori
 } //Order: OK, compilier knows 'setImage()' exists
-ImageElaborator::ImageElaborator() {}
+//ImageElaborator::ImageElaborator() {}
 
 void ImageElaborator::setImage(string path) {
     shared_ptr<Image> p(new Image(path)); //I need to use this temporary shared ptr, for some reason if i do img = new Image(path) it doesn't work. It doesn't work if I do Image i(path); img = &i; either
@@ -63,7 +63,7 @@ void ImageElaborator::imgToVectors() {
     }
 }
 
-//TODO renderImage()
+//done renderImage()
 void ImageElaborator::renderImage() {
     Image elaboratedImage(Geometry(img->size().width(),img->size().height()), Color(QuantumRange, QuantumRange, QuantumRange, QuantumRange));
     for(unsigned int i = 0; i < elaboratedImage.size().height(); i++){
@@ -95,7 +95,7 @@ void ImageElaborator::notify(){
 }
 
 void ImageElaborator::saveImage(std::string path) {
-    //FIXME prima di fare il write è necessario (e sufficente) modificare l'immagine stessa
+    //done prima di fare il write è necessario (e sufficente) modificare l'immagine stessa
     renderImage();
     img->write(path);
 }
