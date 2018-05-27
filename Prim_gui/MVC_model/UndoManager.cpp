@@ -38,6 +38,7 @@ void UndoManager::update() {
         lastUndo = (lastUndo + 1) % 5;
         firstUndo = (firstUndo + 1) % 5;
     }
+    //FIXME rimuovere costante 5
 }
 
 void UndoManager::updateRedo() {

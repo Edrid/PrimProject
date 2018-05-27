@@ -11,11 +11,11 @@ set(CMAKE_CXX_STANDARD 11)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-find_package( Qt5Core REQUIRED )
-find_package( Qt5Widgets REQUIRED )
-find_package( Qt5Gui REQUIRED )
+#find_package( Qt5Core REQUIRED )
+#find_package( Qt5Widgets REQUIRED )
+#find_package( Qt5Gui REQUIRED )
 
-
+find_package(Qt5 COMPONENTS Core Widgets Gui REQUIRED)
 
 set(SOURCE_FILES
         main.cpp

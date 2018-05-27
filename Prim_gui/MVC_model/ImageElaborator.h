@@ -51,6 +51,7 @@ private:
     vector<vector<int>> alphas;
     // messi i puntatori
     list<Observer*> observers;
+    //FIXME fare un reserve dei vectors
 
 };
 
