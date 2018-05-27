@@ -27,22 +27,30 @@ void ImageElaborator::setImage(string path) {
 
 void ImageElaborator::imgToVectors() {
     reds.resize(img->rows());
+    reds.reserve(img->rows());
     //cout << "The vector height is:    " << reds.size() << "\tAnd width is: " << reds.at(0).size() << endl;
     //same for greens, blues and alphas
     greens.resize(img->rows());
+    greens.reserve(img->rows());
 
     blues.resize(img->rows());
+    blues.reserve(img->rows());
 
     alphas.resize(img->rows());
+    alphas.reserve(img->rows());
 
     //cout << "The image height is: " << img.size().height() << " The image width is: " << img.size().width();
 
     Color pixColor;
     for(unsigned int i = 0; i < img->rows(); i++){
         reds.at(i).resize(img->columns());
+        reds.at(i).reserve(img->columns());
         alphas.at(i).resize(img->columns());
+        alphas.at(i).reserve(img->columns());
         blues.at(i).resize(img->columns());
+        blues.at(i).reserve(img->columns());
         greens.at(i).resize(img->columns());
+        greens.at(i).reserve(img->columns());
         for(unsigned int j = 0; j < img->columns(); j++){
             pixColor = img->pixelColor(j,i);
             alphas.at(i).at(j) = (int)pixColor.quantumAlpha();
