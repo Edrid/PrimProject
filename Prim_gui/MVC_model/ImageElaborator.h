@@ -9,9 +9,10 @@
 #include <vector>
 #include <memory>
 #include <QImage>
-#include <MVC_interfaces/Subject.h>
+//#include <MVC_interfaces/Subject.h>
 #include "FilterApplyer.h"
 #include "UndoManager.h"
+#include "../MVC_interfaces/Subject.h" //vuole che lo metta così
 
 using namespace Magick;
 using namespace std;
@@ -39,6 +40,7 @@ public:
     void addObserver(Observer* o){ observers.push_back(o); }
     void removeObserver(Observer* o){ observers.remove(o); }
 
+    const vector<vector<int>> &getReds() const;
 
 private:
     shared_ptr<Image> img;

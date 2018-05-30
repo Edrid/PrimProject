@@ -99,3 +99,7 @@ void ImageElaborator::saveImage(std::string path) {
     renderImage();
     img->write(path);
 }
+
+const vector<vector<int>> &ImageElaborator::getReds() const {
+    return reds;
+}
