@@ -11,7 +11,7 @@
 //using namespace Magick;
 using namespace std;
 
-typedef vector<vector<int>>* QuantumPointer;
+typedef vector<vector<int>>* QuantumPointer; //FIXME
 
 //THIS IS AN ABSTRACT CLASS, THE CONVOLUTION METHOD WILL BE IMPLEMENTED.
 class KernelFilter {
@@ -27,7 +27,7 @@ protected:
     QuantumPointer greens_;
     QuantumPointer blues_;
     QuantumPointer alphas_;
-
+    //TODO DISTRUTTORE VIRTUALE
 };
 
 

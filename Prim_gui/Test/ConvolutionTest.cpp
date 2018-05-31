@@ -18,6 +18,7 @@ protected:
     ImageElaborator* ie;
     int gaussConvoluted[5][5] = {{0,0,0,0,0},{0,50,50,50,0},{0,50,50,50,0},{0,50,50,50,0},{0,0,0,0,0}};
     int edgeConvoluted[5][5] = {{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0}};
+    //TODO fare test su immagini che hanno un contorno
     void SetUp() override{
         ie = new ImageElaborator("/home/edoardo/Desktop/immagine prova/rgb50-50-50.jpg");
     }
