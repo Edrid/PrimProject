@@ -13,6 +13,8 @@ vector<vector<int>> KernelFilter::convolute(vector<vector<int>> *original, bool 
     unsigned long height = original->size();
     unsigned long width = original->at(0).size();
 
+    const int maxQRange = 255;
+
     int convMatLength = (int) convMatrix.at(0).size();
     int convMatHeight = (int) convMatrix.size(); //in realtà la matrice di convoluzione è QUADRATA, dunque è sufficiente sapere una sola dimensine
 
@@ -48,8 +50,8 @@ vector<vector<int>> KernelFilter::convolute(vector<vector<int>> *original, bool 
                 sum = sum/convSum; //divide only if the sum has to be normalised e.g. gaussian NOTE: if I don't normalize the values
             if(sum < 0)
                 sum = 0;
-            if(sum > 255)
-                sum = 255;
+            if(sum > maxQRange)
+                sum = maxQRange;
             //std::cout << "Sum = " << sum%256 << std::endl;
             convoluted.at(k).at(s) = sum;
            //std::cout << "convoluted =" << convoluted.at(k).at(s) <<std::endl;
