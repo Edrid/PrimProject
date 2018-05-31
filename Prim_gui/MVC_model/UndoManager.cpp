@@ -4,7 +4,6 @@
 
 #include "UndoManager.h"
 
-//FIXed fa un undo di troppo
 UndoManager::UndoManager(QuantumPointer reds, QuantumPointer greens, QuantumPointer blues, QuantumPointer alphas) {
     origReds = reds;
     origGreens = greens;
@@ -38,7 +37,6 @@ void UndoManager::update() {
         lastUndo = (lastUndo + 1) % maxOps;
         firstUndo = (firstUndo + 1) % maxOps;
     }
-    //FIXME rimuovere costante 5
 }
 
 void UndoManager::updateRedo() {
@@ -63,7 +61,7 @@ void UndoManager::updateRedo() {
 
 void UndoManager::undo() {
     if(nUndoElements < 1 || nUndoAvailable < 1)
-        return;  //TODO eccezione
+        return;
     updateRedo();
     *origReds = redsUndoArrayPointer[lastUndo];
     *origGreens = greensUndoArrayPointer[lastUndo];
@@ -72,14 +70,14 @@ void UndoManager::undo() {
     lastUndo = (lastUndo - 1);
     //lastUndo = lastUndo % 5;
     if(lastUndo == -1)
-        lastUndo = 4;
+        lastUndo = maxOps-1;
     nUndoAvailable -= 1;
     nUndoElements -= 1;
 }
 
 void UndoManager::redo() {
     if(nRedoElements < 1 || nRedoAvailable < 1)
-        return; //TODO eccezione
+        return;
     update();
     *origReds = redsRedoArrayPointer[lastRedo];
     *origGreens = greensRedoArrayPointer[lastRedo];
@@ -88,7 +86,7 @@ void UndoManager::redo() {
     //lastRedo = (lastRedo - 1) % 5;
     lastRedo -= 1;
     if(lastRedo == -1)
-        lastRedo = 4;
+        lastRedo = maxOps-1;
     nRedoAvailable -= 1;
     nRedoElements -= 1;
 }
