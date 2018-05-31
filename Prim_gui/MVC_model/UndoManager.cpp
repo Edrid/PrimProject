@@ -10,19 +10,19 @@ UndoManager::UndoManager(QuantumPointer reds, QuantumPointer greens, QuantumPoin
     origGreens = greens;
     origBlues = blues;
     origAlphas = alphas;
-    redsUndoArrayPointer = new QuantumValues[5];
-    redsRedoArrayPointer = new QuantumValues[5];
-    greensUndoArrayPointer = new QuantumValues[5];
-    greensRedoArrayPointer = new QuantumValues[5];
-    bluesUndoArrayPointer = new QuantumValues[5];
-    bluesRedoArrayPointer = new QuantumValues[5];
-    alphasUndoArrayPointer = new QuantumValues[5];
-    alphasRedoArrayPointer = new QuantumValues[5];
+    redsUndoArrayPointer = new QuantumValues[maxOps];
+    redsRedoArrayPointer = new QuantumValues[maxOps];
+    greensUndoArrayPointer = new QuantumValues[maxOps];
+    greensRedoArrayPointer = new QuantumValues[maxOps];
+    bluesUndoArrayPointer = new QuantumValues[maxOps];
+    bluesRedoArrayPointer = new QuantumValues[maxOps];
+    alphasUndoArrayPointer = new QuantumValues[maxOps];
+    alphasRedoArrayPointer = new QuantumValues[maxOps];
 }
 
 void UndoManager::update() {
-    if(nUndoElements < 5 ){ // è un valore scelto da noi
-        lastUndo = (lastUndo + 1) % 5;
+    if(nUndoElements < maxOps ){ // è un valore scelto da noi
+        lastUndo = (lastUndo + 1) % maxOps;
         redsUndoArrayPointer[lastUndo] = *origReds;
         greensUndoArrayPointer[lastUndo] = *origGreens;
         bluesUndoArrayPointer[lastUndo] = *origBlues;
@@ -35,15 +35,15 @@ void UndoManager::update() {
         greensUndoArrayPointer[firstUndo] = *origGreens;
         bluesUndoArrayPointer[firstUndo] = *origBlues;
         alphasUndoArrayPointer[firstUndo] = *origAlphas;
-        lastUndo = (lastUndo + 1) % 5;
-        firstUndo = (firstUndo + 1) % 5;
+        lastUndo = (lastUndo + 1) % maxOps;
+        firstUndo = (firstUndo + 1) % maxOps;
     }
     //FIXME rimuovere costante 5
 }
 
 void UndoManager::updateRedo() {
-    if(nRedoElements < 5 ){
-        lastRedo = (lastRedo + 1) % 5;
+    if(nRedoElements < maxOps ){
+        lastRedo = (lastRedo + 1) % maxOps;
         redsRedoArrayPointer[lastRedo] = *origReds;
         greensRedoArrayPointer[lastRedo] = *origGreens;
         bluesRedoArrayPointer[lastRedo] = *origBlues;
@@ -56,8 +56,8 @@ void UndoManager::updateRedo() {
         greensRedoArrayPointer[firstRedo] = *origGreens;
         bluesRedoArrayPointer[firstRedo] = *origBlues;
         alphasRedoArrayPointer[firstRedo] = *origAlphas;
-        lastRedo = (lastRedo + 1) % 5;
-        firstRedo = (firstRedo + 1) % 5;
+        lastRedo = (lastRedo + 1) % maxOps;
+        firstRedo = (firstRedo + 1) % maxOps;
     }
 }
 

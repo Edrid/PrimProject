@@ -34,6 +34,7 @@ private:
     int nRedoElements = 0;
     int firstRedo = 0;
     int lastRedo = -1;
+    const int maxOps = 5;
     QuantumValues* redsUndoArrayPointer;
     QuantumValues* greensUndoArrayPointer;
     QuantumValues* bluesUndoArrayPointer;
