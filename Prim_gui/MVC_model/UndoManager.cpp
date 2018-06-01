@@ -9,7 +9,7 @@ UndoManager::UndoManager(QuantumPointer reds, QuantumPointer greens, QuantumPoin
     origGreens = greens;
     origBlues = blues;
     origAlphas = alphas;
-    redsUndoArrayPointer = new QuantumValues[maxOps];
+   /* redsUndoArrayPointer = new[]; //QuantumValues[maxOps];
     redsRedoArrayPointer = new QuantumValues[maxOps];
     greensUndoArrayPointer = new QuantumValues[maxOps];
     greensRedoArrayPointer = new QuantumValues[maxOps];
@@ -17,7 +17,7 @@ UndoManager::UndoManager(QuantumPointer reds, QuantumPointer greens, QuantumPoin
     bluesRedoArrayPointer = new QuantumValues[maxOps];
     alphasUndoArrayPointer = new QuantumValues[maxOps];
     alphasRedoArrayPointer = new QuantumValues[maxOps];
-}
+*/}
 
 void UndoManager::update() {
     if(nUndoElements < maxOps ){ // è un valore scelto da noi
@@ -90,7 +90,7 @@ void UndoManager::redo() {
     nRedoAvailable -= 1;
     nRedoElements -= 1;
 }
-
+/*
 UndoManager::~UndoManager() {
     delete redsUndoArrayPointer;
     delete redsRedoArrayPointer;
@@ -101,4 +101,4 @@ UndoManager::~UndoManager() {
     delete alphasUndoArrayPointer;
     delete alphasRedoArrayPointer;
 
-}
+}*/

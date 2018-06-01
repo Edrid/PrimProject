@@ -18,7 +18,7 @@ class KernelFilter {
 public:
     KernelFilter(QuantumPointer redsp, QuantumPointer greensp, QuantumPointer bluesp, QuantumPointer alphasp) : reds_(redsp), greens_(greensp), blues_(bluesp), alphas_(alphasp){}
     virtual void applyFilter() = 0;
-
+    virtual ~KernelFilter() = default;
 
 protected:
     vector<vector<int>> convolute(vector<vector<int>> *original, bool normalized); //it modifies the variables right below

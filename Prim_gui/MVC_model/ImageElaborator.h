@@ -9,7 +9,6 @@
 #include <vector>
 #include <memory>
 #include <QImage>
-//#include <MVC_interfaces/Subject.h>
 #include "FilterApplyer.h"
 #include "UndoManager.h"
 #include "../MVC_interfaces/Subject.h" //vuole che lo metta così

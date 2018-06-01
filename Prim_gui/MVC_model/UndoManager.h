@@ -8,6 +8,7 @@
 #include <stack>
 #include <Magick++.h>
 #include <vector>
+#include <memory>
 
 using namespace Magick;
 using namespace std;
@@ -21,7 +22,7 @@ public:
     void redo();
     void update();
     void updateRedo();
-    virtual ~UndoManager();
+    virtual ~UndoManager() = default;
 
 private:
     int nUndoAvailable = 0;
@@ -33,15 +34,15 @@ private:
     int firstRedo = 0;
     int lastRedo = -1;
     const int maxOps = 5;
-    QuantumPointer redsUndoArrayPointer;
-    QuantumPointer greensUndoArrayPointer;
-    QuantumPointer bluesUndoArrayPointer;
-    QuantumPointer alphasUndoArrayPointer;
+    unique_ptr<QuantumValues[]> redsUndoArrayPointer{new QuantumValues[maxOps]};
+    unique_ptr<QuantumValues[]> greensUndoArrayPointer{new QuantumValues[maxOps]};
+    unique_ptr<QuantumValues[]> bluesUndoArrayPointer{new QuantumValues[maxOps]};
+    unique_ptr<QuantumValues[]> alphasUndoArrayPointer{new QuantumValues[maxOps]};
 
-    QuantumPointer redsRedoArrayPointer;
-    QuantumPointer greensRedoArrayPointer;
-    QuantumPointer bluesRedoArrayPointer;
-    QuantumPointer alphasRedoArrayPointer;
+    unique_ptr<QuantumValues[]> redsRedoArrayPointer{new QuantumValues[maxOps]};
+    unique_ptr<QuantumValues[]> greensRedoArrayPointer{new QuantumValues[maxOps]};
+    unique_ptr<QuantumValues[]> bluesRedoArrayPointer{new QuantumValues[maxOps]};
+    unique_ptr<QuantumValues[]> alphasRedoArrayPointer{new QuantumValues[maxOps]};
 
     QuantumPointer origReds;
     QuantumPointer origBlues;
