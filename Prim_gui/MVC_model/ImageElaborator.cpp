@@ -57,7 +57,8 @@ void ImageElaborator::imgToVectors() {
             reds.at(i).at(j) = (int)pixColor.quantumRed();
             greens.at(i).at(j) = (int)pixColor.quantumGreen();
             blues.at(i).at(j) = (int)pixColor.quantumBlue();
-            //cout << "  " << (int)pixColor.quantumGreen();
+            //cout << "  " << (int)pixColor.quantumRed();
+            //cout << " " << reds.at(i).at(j) << endl;
         }
         //cout << endl;
     }

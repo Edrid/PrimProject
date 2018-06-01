@@ -16,14 +16,19 @@
 class ConvolutionTestFixture : public ::testing::Test{
 protected:
     ImageElaborator* ie;
+    ImageElaborator* imgElab;
     int gaussConvoluted[5][5] = {{0,0,0,0,0},{0,50,50,50,0},{0,50,50,50,0},{0,50,50,50,0},{0,0,0,0,0}};
     int edgeConvoluted[5][5] = {{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0}};
+    int imageWithEdge[7][7] = {{0,0,0,0,0,0,0},{0,6,117,0,120,9,0},{0,6,117,0,120,9,0},{0,6,117,0,120,9,0},{0,6,117,0,120,9,0},{0,6,117,0,120,9,0},{0,0,0,0,0,0,0}};
+    float gaussWithEdge[7][7] = {{0,0,0,0,0,0,0},{0,62,51,40,51,61,0},{0,62,51,40,51,61,0},{0,62,51,40,51,61,0},{0,62,51,40,51,61,0},{0,62,51,40,51,61,0},{0,0,0,0,0,0,0}};
     //TODO fare test su immagini che hanno un contorno
     void SetUp() override{
+        imgElab = new ImageElaborator("/home/edoardo/CLionProjects/push/7x7.jpg");
         ie = new ImageElaborator("/home/edoardo/Desktop/immagine prova/rgb50-50-50.jpg");
     }
     void TearDown() override{
         delete ie;
+        delete imgElab;
     }
 };
 
@@ -53,5 +58,24 @@ TEST_F(ConvolutionTestFixture, gaussConvolution){
         for(int j=0; j<ie->getReds().at(0).size(); j++){
             EXPECT_EQ(gaussConvoluted[i][j], ie->getReds()[i][j]);
         }
+    }
+}
+
+TEST_F(ConvolutionTestFixture, positiveEdgeConvolution){
+    imgElab->filterApplyer_->setKernelStrategy(FilterTypes::EdgeDetection);
+    imgElab->filterApplyer_->kernelFilter();
+    for(int i=0; i<imgElab->getReds().size(); i++) {
+        for (int j = 0; j < imgElab->getReds().at(0).size(); j++)
+            EXPECT_EQ(imageWithEdge[i][j], imgElab->getReds()[i][j]);
+
+    }
+}
+
+TEST_F(ConvolutionTestFixture, positiveGaussConvolution){
+    imgElab->filterApplyer_->setKernelStrategy(FilterTypes::GaussianBlur);
+    imgElab->filterApplyer_->kernelFilter();
+    for(int i=0; i<imgElab->getReds().size(); i++) {
+        for (int j = 0; j < imgElab->getReds().at(0).size(); j++)
+            EXPECT_EQ(gaussWithEdge[i][j], imgElab->getReds()[i][j]);
     }
 }

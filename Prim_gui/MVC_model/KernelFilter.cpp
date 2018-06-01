@@ -54,9 +54,10 @@ vector<vector<int>> KernelFilter::convolute(vector<vector<int>> *original, bool 
                 sum = maxQRange;
             //std::cout << "Sum = " << sum%256 << std::endl;
             convoluted.at(k).at(s) = sum;
-           //std::cout << "convoluted =" << convoluted.at(k).at(s) <<std::endl;
             //std::cout << "" << k;
-            // std::cout << "" << s;
+            //std::cout << "" << s;
+            //std::cout << "convoluted =" << convoluted.at(k).at(s) <<std::endl;
+
         }
     }
     return convoluted;
