@@ -21,12 +21,12 @@ enum class FilterTypes{GaussianBlur, EdgeDetection, Sharpen, Emboss};
 
 class FilterApplyer {
 public:
-    FilterApplyer(QuantumPointer reds, QuantumPointer greens, QuantumPointer blues, QuantumPointer alphas, UndoManager* undoPtr) : reds_(reds), greens_(greens), blues_(blues), alphas_(alphas), undoPtr(undoPtr){}
+    FilterApplyer(QuantumPointer reds, QuantumPointer greens, QuantumPointer blues, QuantumPointer alphas, shared_ptr<UndoManager> undoPtr) : reds_(reds), greens_(greens), blues_(blues), alphas_(alphas), undoPtr(undoPtr){}
     //FilterApplyer();
     void kernelFilter(); //this method has all the necessary information to elaborate the quantums.
     void setKernelStrategy(FilterTypes filterID);
 
-    void setUndoPtr(UndoManager *undoPtr);
+ //   void setUndoPtr(UndoManager *undoPtr);
 
 private:
     void notifyUndo();
@@ -36,7 +36,7 @@ private:
     QuantumPointer blues_;
     QuantumPointer alphas_;
     KernelFilter *strategy_; //STRATEGY
-    UndoManager *undoPtr;
+    shared_ptr<UndoManager> undoPtr;
 
 };
 

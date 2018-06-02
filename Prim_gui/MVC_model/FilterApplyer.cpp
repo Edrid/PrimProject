@@ -51,7 +51,7 @@ void FilterApplyer::kernelFilter() {
     strategy_->applyFilter();
 }
 
-void FilterApplyer::setUndoPtr(UndoManager *undoPtr) {
+/*void FilterApplyer::setUndoPtr(UndoManager *undoPtr) {
     FilterApplyer::undoPtr = undoPtr;
 }
-
+*/

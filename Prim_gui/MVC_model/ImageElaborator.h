@@ -33,7 +33,8 @@ public:
         img->display(); }
     QImage getQTimage();
     shared_ptr<FilterApplyer> filterApplyer_;
-    UndoManager *undoPtr; //FIXME
+    //UndoManager *undoPtr; //FIXME
+    shared_ptr<UndoManager> undoPtr;
 
     void notify(); //done implementare il notify
     void addObserver(Observer* o){ observers.push_back(o); }

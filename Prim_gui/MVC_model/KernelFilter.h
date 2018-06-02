@@ -27,7 +27,6 @@ protected:
     QuantumPointer greens_;
     QuantumPointer blues_;
     QuantumPointer alphas_;
-    //TODO DISTRUTTORE VIRTUALE
 };
 
 

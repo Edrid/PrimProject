@@ -12,7 +12,7 @@ UndoManager::UndoManager(QuantumPointer reds, QuantumPointer greens, QuantumPoin
    /* redsUndoArrayPointer = new[]; //QuantumValues[maxOps];
     redsRedoArrayPointer = new QuantumValues[maxOps];
     greensUndoArrayPointer = new QuantumValues[maxOps];
-    greensRedoArrayPointer = new QuantumValues[maxOps];
+    greensRedoArrayPointer = new QuantumValues[maxOps]; //todo pulire
     bluesUndoArrayPointer = new QuantumValues[maxOps];
     bluesRedoArrayPointer = new QuantumValues[maxOps];
     alphasUndoArrayPointer = new QuantumValues[maxOps];
