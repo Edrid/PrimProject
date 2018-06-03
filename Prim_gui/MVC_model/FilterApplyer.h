@@ -12,7 +12,7 @@
 #include "UndoManager.h"
 
 using namespace std;
-typedef vector<vector<int>>* QuantumPointer; //Here I use 'raw' pointers for ease of the implementation. Later maybe change them with smart pointers, but after all 'Premature optimization is the root of all evil'
+typedef shared_ptr<vector<vector<int>>> QuantumPointer; //Here I use 'raw' pointers for ease of the implementation. Later maybe change them with smart pointers, but after all 'Premature optimization is the root of all evil'
 
 //NOTE: some filters need normalizzation, others don't
 enum class FilterTypes{GaussianBlur, EdgeDetection, Sharpen, Emboss};
@@ -35,7 +35,7 @@ private:
     QuantumPointer greens_;
     QuantumPointer blues_;
     QuantumPointer alphas_;
-    KernelFilter *strategy_; //STRATEGY
+    KernelFilter *strategy_; //STRATEGY FIXME nota: il puntatore dello strategy è ben gestito dal delete
     shared_ptr<UndoManager> undoPtr;
 
 };

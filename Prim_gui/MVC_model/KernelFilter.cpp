@@ -8,7 +8,7 @@
 #include <vector>
 #include <memory>
 
-vector<vector<int>> KernelFilter::convolute(vector<vector<int>> *original, bool normalized) {
+vector<vector<int>> KernelFilter::convolute(QuantumPointer original, bool normalized) {
 
     unsigned long height = original->size();
     unsigned long width = original->at(0).size();

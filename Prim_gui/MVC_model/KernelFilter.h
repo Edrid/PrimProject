@@ -7,11 +7,12 @@
 
 #include <Magick++.h>
 #include <iostream>
+#include <memory>
 
 //using namespace Magick;
 using namespace std;
 
-typedef vector<vector<int>>* QuantumPointer; //FIXME
+typedef shared_ptr<vector<vector<int>>> QuantumPointer; //FIXME
 
 //THIS IS AN ABSTRACT CLASS, THE CONVOLUTION METHOD WILL BE IMPLEMENTED.
 class KernelFilter {
@@ -21,7 +22,7 @@ public:
     virtual ~KernelFilter() = default;
 
 protected:
-    vector<vector<int>> convolute(vector<vector<int>> *original, bool normalized); //it modifies the variables right below
+    vector<vector<int>> convolute(QuantumPointer original, bool normalized); //it modifies the variables right below
     vector<vector<int>> convMatrix;
     QuantumPointer reds_;
     QuantumPointer greens_;

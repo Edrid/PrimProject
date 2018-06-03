@@ -17,7 +17,7 @@ using namespace Magick;
 using namespace std;
 
 //typedef shared_ptr<vector<vector<int>>> QuantumPointer;
-typedef vector<vector<int>>* QuantumPointer;
+typedef shared_ptr<vector<vector<int>>> QuantumPointer;
 
 //Remember, the ImageElaborator always has to have the quantum vectors updated with the current values.
 class ImageElaborator : public virtual Subject{
@@ -40,17 +40,17 @@ public:
     void addObserver(Observer* o){ observers.push_back(o); }
     void removeObserver(Observer* o){ observers.remove(o); }
 
-    const vector<vector<int>> &getReds() const;
+    //const vector<vector<int>> &getReds() const;
 
 private:
     shared_ptr<Image> img;
     void imgToVectors(); //In this case the parameter list is empty because I already have access to the image, in fact it's inside of the class
     void renderImage(); //Both return value and parameter list are empty for the same reason as above
     //The following are the quantum containers, a different implementation is certainly possible, though this one is more practical
-    vector<vector<int>> reds;
-    vector<vector<int>> greens;
-    vector<vector<int>> blues;
-    vector<vector<int>> alphas;
+    QuantumPointer reds;
+    QuantumPointer greens;
+    QuantumPointer blues;
+    QuantumPointer alphas;
     // messi i puntatori
     list<Observer*> observers;
     //DONE fare un reserve dei vectors

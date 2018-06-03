@@ -12,8 +12,8 @@
 
 using namespace Magick;
 using namespace std;
-typedef vector<vector<int>>* QuantumPointer;
 typedef vector<vector<int>> QuantumValues;
+typedef shared_ptr<vector<vector<int>>> QuantumPointer;
 
 class UndoManager {
 public:
